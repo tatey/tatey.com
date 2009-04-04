@@ -81,7 +81,7 @@ div#header
     bottom: 0;
     width: 202px;
     height: 202px;
-    background: url("/images/lime.png") right top no-repeat;
+    background: url("/images/layout/lime.png") right top no-repeat;
   }
 
   div#lime:hover
@@ -143,6 +143,14 @@ h2
   color: #c6e567;
 }
 
+h3
+{
+  font-family: 'helvetica', 'arial', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #c6e567;
+}
+
 p
 {
   letter-spacing: 0.05em;
@@ -163,10 +171,24 @@ a:hover img
 img.img_left
 {
   float: left;
-  margin-right: 1em;
+  margin-right: 1.5em;
   margin-bottom: 0.25em;
 }
 
+ul.images
+{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+  
+  ul.images li img
+  {
+    float: left;
+    margin-right: 1.5em;
+    margin-bottom: 1.5em;
+  }
+  
 /* Other */
 
 div.post_date

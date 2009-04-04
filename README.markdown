@@ -10,7 +10,7 @@ Following files, directories and their contents are Copyright Tate Johnson. You 
 * about.html
 * images/
 
-Following direcotires and their contents are licenced under the [Creative Commons Attribution-Noncommercial-No Derivative Works 2.5 Australia](http://creativecommons.org/licenses/by-nc-nd/2.5/au/):
+Following directories and their contents are licenced under the [Creative Commons Attribution-Noncommercial-No Derivative Works 2.5 Australia](http://creativecommons.org/licenses/by-nc-nd/2.5/au/):
 
 * _posts/
 
