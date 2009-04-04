@@ -148,6 +148,25 @@ p
   letter-spacing: 0.05em;
 }
 
+/* Image */
+
+img
+{
+  border: 6px solid #333;
+}
+
+a:hover img
+{
+  border-color: #c6e567;
+}
+
+img.img_left
+{
+  float: left;
+  margin-right: 1em;
+  margin-bottom: 0.25em;
+}
+
 /* Other */
 
 div.post_date
