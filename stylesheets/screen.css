@@ -1,0 +1,174 @@
+/* Layout */
+
+html, body
+{
+  margin: 0;
+  padding: 0;
+}
+
+html
+{
+  background: #222;
+  font-family: 'georgia', serif;
+  font-size: 110%;
+  line-height: 1.8em;
+  color: #fff;
+}
+
+body
+{
+  width: 44em;
+  max-width: 90%;
+  margin: 0 auto;
+  padding-bottom: 3em;
+}
+
+div#header
+{
+  position: relative;
+  margin-bottom: 4em;
+  padding-top: 1em;
+}
+
+  ul#navigation
+  {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+    ul#navigation li
+    {
+      display: block;
+      float: left;
+      background: #111;
+    }
+
+    ul#navigation li.first
+    {
+      padding-left: 1.2em;
+    }
+
+    ul#navigation li.last
+    {
+      padding-right: 1.2em;
+    }
+
+      ul#navigation li a
+      {
+        display: block;
+        padding: 0.6em 0.6em;
+        border-bottom: none;
+        font-size: 1.65em;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #fff;
+      }
+
+      ul#navigation li a:hover,
+      ul#navigation li a:active,
+      ul#navigation li a:focus
+      {
+        background: #ebffb4;
+        color: #111;
+      }
+
+  div#lime
+  {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 202px;
+    height: 202px;
+    background: url("/images/lime.png") right top no-repeat;
+  }
+
+  div#lime:hover
+  {
+    background-position: left bottom;
+  }
+        
+/* Typography */
+
+a
+{
+  border-bottom: 1px solid #ebffb4;
+  text-decoration: none;
+  color: #ebffb4;
+}
+
+a:hover
+{
+  color: #111;
+  background: #ebffb4;
+}
+
+h1
+{
+  margin-bottom: 0.375em;
+  font-size: 5.5em;
+  font-weight: normal;
+}
+
+  h1 a
+  {
+    border-bottom: none;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  h1 a:hover,
+  h1 a:active,
+  h1 a:focus
+  {
+    background: transparent;
+    color: #ebffb4;
+  }
+
+    h1 a span
+    {
+      position: relative;
+      bottom: 0.5em;
+      padding-left: 0.25em;
+      padding-right: 0.5em;
+      font-size: 0.25em;
+    }
+  
+h2
+{
+  font-family: 'helvetica', 'arial', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  color: #c6e567;
+}
+
+p
+{
+  letter-spacing: 0.05em;
+}
+
+/* Other */
+
+div.post_date
+{
+  margin: 0;
+  line-height: 0;
+  font-family: 'helvetica', 'arial', sans-serif;
+  font-weight: bold;
+  color: #aaa;
+}
+
+div.clear_both
+{
+  clear: both;
+}
+
+hr
+{
+  margin: 2.5em 0 3em 0;
+  border-top: 1px solid #010101;
+  border-bottom: 1px solid #575757;
+  border-right: none;
+  border-left: none;
+}

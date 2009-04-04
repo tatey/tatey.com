@@ -1,0 +1,15 @@
+---
+layout: default
+title: Blog
+---
+
+{% for post in site.posts %}
+	<div class="post_date">{{ post.date | date_to_string }}</div>
+	<h2>{{ post.title }} <a href="{{ post.url }}" title="[Permalink] {{ post.title }}" style="border: none;">&rarr;</a></h2>
+	
+	{{ post.content }}
+		
+	{% if post != site.posts.last %}
+		<hr/>
+	{% endif %}
+{% endfor %}
