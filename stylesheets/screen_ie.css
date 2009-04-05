@@ -1,0 +1,29 @@
+/* Layout */
+
+div#header
+{
+  padding-top: 3.5em;
+}
+
+  div#lime
+  {
+    position: absolute;
+    right: 0;
+    top: 2.25em;
+  }
+
+/* Typograpgy */
+
+h1
+{
+  margin-bottom: 0;
+  padding-bottom: 0.65em;
+}
+
+/* Image */
+
+ul.images li
+{
+  float: left;
+  margin-bottom: 1.5em;
+}
