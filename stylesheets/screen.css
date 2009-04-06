@@ -189,6 +189,12 @@ ul.images
     margin-bottom: 1.5em;
   }
   
+div.post img
+{
+  display: block;
+  margin: 0 auto;
+}
+  
 /* Other */
 
 div.post_date
