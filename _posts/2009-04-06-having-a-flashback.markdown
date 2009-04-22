@@ -17,6 +17,6 @@ Second family computer. Intel Pentium 200Mhz with a 17" CRT. Memories of Command
 
 Second or third personal computer. Intel Pentium 4 1.6GHz with water cooling and an 16x2 LCD for displaying system statistics. Memories of Warcraft 3, Counter-Strike, Mandrake Linux, Stylesheet enlightenment, Photoshop 5.0, and Mozilla Phoenix.
 
-Like Compy, there was suppose to be a matching display. I drew it, I just can't find it. I had the intention that the "on" button would boot the computer in to Windows XP. 
+Like P200, there was suppose to be a matching display. I drew it, I just can't find it. I had the intention that the "on" button would boot the computer in to Windows XP. 
 
 [View a photo of the box](/images/posts/2009-04-06-having-a-flashback/the_water_tower_photo.jpg) in all its glory. Like anyone else interested in PC hardware as a young teenager, you had a powerful computer and a shitty desk, chair and keyboard.

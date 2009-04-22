@@ -27,10 +27,11 @@ public function __construct()
 
 public function render_layout($view, $layout = 'application')
 {
-  $markup = $this->smarty->fetch('layouts/' . $layout . '/header.tpl');
-  $markup .= $this->smarty->fetch($view);
-  $markup .= $this->smarty->fetch('layouts/' . $layout . '/footer.tpl');
-  echo($markup);
+  echo(
+    $this->smarty->fetch('layouts/' . $layout . '/header.tpl') .
+    $this->smarty->fetch($view) .
+    $this->smarty->fetch('layouts/' . $layout . '/footer.tpl')
+  );
 }
 {% endhighlight %}
 
