@@ -42,7 +42,7 @@ This has the advantage that you don't need to execute the last two commands if t
 
 Generally this isn't an issue, but last week we saw a flurry of commits to the repository. Such a process would keep the history nice and linear.
 
-PS: I've been secretly doing this.
-
 Cheers,  
 Tatey
+
+PS: I've been secretly doing this.
