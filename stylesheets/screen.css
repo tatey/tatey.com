@@ -98,7 +98,9 @@ a
   color: #ebffb4;
 }
 
-a:hover
+a:hover,
+a:active,
+a:focus
 {
   color: #111;
   background: #ebffb4;
