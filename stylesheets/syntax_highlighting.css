@@ -6,6 +6,7 @@
   margin-bottom: 1em;
   font-family: 'monaco', monospace;
   line-height: 1.1em;
+  overflow: auto;
 }
 .highlight .hll { background-color: #333333 }
 .highlight  { background: #111111; color: #ffffff }
