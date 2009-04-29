@@ -1,2 +1,4 @@
+Sitemap: http://tatey.com/sitemap.xml
+
 User-agent: *
 Disallow: /images/
