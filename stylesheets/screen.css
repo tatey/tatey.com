@@ -121,8 +121,8 @@ h1
   }
   
   h1 a:hover,
-  h1 a:active,
-  h1 a:focus
+  h1 a:focus,
+  h1 a:active
   {
     background: transparent;
     color: #ebffb4;
@@ -157,6 +157,28 @@ h3
 p
 {
   letter-spacing: 0.05em;
+}
+
+.about
+{
+  padding: 0 0.5em;
+  color: #aaa;
+  font-family: 'helvetica', 'arial', sans-serif;
+  text-align: center;
+}
+
+.about a
+{
+  color: #fff;
+  border: none;
+}
+
+.about a:hover,
+.about a:focus,
+.about a:active
+{
+  background: #fff;
+  color: #222;
 }
 
 /* Image */
