@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Obligatory Hello, World!
+title: Obligatory hello, world!
 ---
 
 I've spent a good part of today on the seventh iteration of tatey.com.

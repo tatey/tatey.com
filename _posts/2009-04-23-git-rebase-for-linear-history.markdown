@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Git Rebase for Linear History
+title: Git rebase for linear history
 ---
 
 Subject: Suggestion to rebase after committing and before pushing  

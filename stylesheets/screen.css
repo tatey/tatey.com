@@ -185,6 +185,8 @@ p
 
 img
 {
+  display: block;
+  margin: 0 auto;
   border: 6px solid #333;
 }
 
@@ -213,12 +215,6 @@ ul.images
     margin-right: 1.5em;
     margin-bottom: 1.5em;
   }
-  
-div.post img
-{
-  display: block;
-  margin: 0 auto;
-}
   
 /* Other */
 
