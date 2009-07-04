@@ -3,7 +3,7 @@ layout: post
 title: Quantifying what's better about Mac OS X
 ---
 
-I'm one of two Mac user out of a group of mates who are mostly Linux and Windows users. Time and time again, my choice of platform is on trial. Common arguments include "Apple hardware is expensive", "It's proprietary and locked down" and "I can do everything I need to". 
+I'm one of two Mac users out of a group of mates who are mostly Linux and Windows users. Time and time again, my choice of platform is on trial. Common arguments include "Apple hardware is expensive", "It's proprietary and locked down" and "I can do everything I need to". 
 
 [Jim Whimpey](http://jimwhimpey.com/) has thought about [quantifying what's better about Mac OS X](http://log.valhallaisland.com/post/126975664). It's the attention to detail on the littlest of things, a consistent user experience and the only platform which stays out of my way the most.
 
