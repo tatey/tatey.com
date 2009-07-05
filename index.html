@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Blog
+title: Tate Johnson
 ---
 
-{% for post in site.posts %}
+{% for post in site.posts limit:5 %}
   <div class="post_date">{{ post.date | date_to_string }}</div>
   <h2>{{ post.title }} <a href="{{ post.url }}" title="[Permalink] {{ post.title }}" style="border: none;">&rarr;</a></h2>
 
@@ -12,4 +12,4 @@ title: Blog
   <hr/>
 {% endfor %}
 
-<p class="about"><a href="/about.html">Tate Johnson</a> is a 22 year old <a href="http://everydayhero.com.au">Ruby on Rails developer</a> and <a href="http://griffith.edu.au">university student</a> living in <a href="http://www.flickr.com/photos/23054854@N06/3319265306/in/set-72157614423917229/">Brisbane, Australia</a>. He enjoys riding <a href="http://www.flickr.com/photos/23054854@N06/3394817144/in/set-72157615974887999/">bicycles</a>, <a href="http://www.flickr.com/photos/23054854@N06/3580385131/in/set-72157619034796216/">motorbikes</a>, <a href="http://www.flickr.com/photos/23054854@N06/">taking photos</a> and <a href="http://www.flickr.com/photos/23054854@N06/collections/72157611344239429/">travelling</a>. Subscribe to the <a href="http://feeds2.feedburner.com/tatejohnson">feed</a>.</p>
+{% include about.html %}
