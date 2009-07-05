@@ -21,7 +21,7 @@ layout: nil
     <changefreq>yearly</changefreq>
   </url>
   <url>
-    <log>http://tatey.com/archive.html</loc>
+    <loc>http://tatey.com/archive.html</loc>
     <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
     <changefreq>weekly</changefreq>
   </url>
