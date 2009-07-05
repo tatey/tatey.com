@@ -9,7 +9,7 @@ html, body
 html
 {
   background: #222;
-  font-family: 'georgia', serif;
+  font-family: 'Georgia', 'DejaVu Serif', 'Times', 'Times New Roman', serif;
   font-size: 110%;
   line-height: 1.8em;
   color: #fff;
@@ -91,6 +91,16 @@ div#header
         
 /* Typography */
 
+h2,
+h3,
+h4,
+blockquote,
+.about,
+div.post_date
+{
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;  
+}
+
 a
 {
   border-bottom: 1px solid #ebffb4;
@@ -139,7 +149,6 @@ h1
   
 h2
 {
-  font-family: 'helvetica', 'arial', sans-serif;
   font-size: 2em;
   font-weight: bold;
   color: #c6e567;
@@ -148,10 +157,14 @@ h2
 
 h3
 {
-  font-family: 'helvetica', 'arial', sans-serif;
   font-size: 1.5em;
   font-weight: bold;
   color: #c6e567;
+}
+
+h4
+{
+  text-transform: uppercase;
 }
 
 p
@@ -159,20 +172,36 @@ p
   letter-spacing: 0.05em;
 }
 
+blockquote,
+.about
+{
+  color: #aaa;
+}
+
+blockquote
+{
+  margin: 1.5em 2.5em;
+  padding-left: 1em;
+  border-left: 1px solid #aaa;
+}
+
 .about
 {
   padding: 0 0.5em;
-  color: #aaa;
-  font-family: 'helvetica', 'arial', sans-serif;
   text-align: center;
 }
 
+blockquote a,
 .about a
 {
   color: #fff;
   border: none;
 }
 
+
+blockquote a:hover,
+blockquote a:focus,
+blockquote a:active,
 .about a:hover,
 .about a:focus,
 .about a:active
@@ -222,7 +251,6 @@ div.post_date
 {
   margin: 0;
   line-height: 0;
-  font-family: 'helvetica', 'arial', sans-serif;
   font-weight: bold;
   color: #aaa;
 }

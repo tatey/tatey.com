@@ -98,14 +98,14 @@ $ git push dreamhost master
 
 Bonus: You now have a redundant copy of your repository.
 
-### Update: 31 May 2009
+#### Updated 31 May 2009
 
 Jay Williams followed this guide and experienced an annoying problem with the Git post-receive hook. After some trouble-shooting, it appeared that the hook was never executed because the user he was shelling in with didn't have the access to the compiled binaries in its path.
 
-Copying your `.bash_profile` to `.bash_rc` should solve the issue.
+Copying your `.bash_profile` to `.bashrc` should solve the issue for non-login shells.
 
 {% highlight bash %}
-cd ~/
-cp .bash_rc .bash_rc.old
-cp .bash_profile .bash_rc
+$ cd ~/
+$ cp .bashrc .bashrc.old
+$ cp .bash_profile .bashrc
 {% endhighlight %}
