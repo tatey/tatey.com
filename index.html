@@ -3,7 +3,7 @@ layout: default
 title: Tate Johnson
 ---
 
-{% for post in site.posts limit:5 %}
+{% for post in site.posts limit:10 %}
   <div class="post_date">{{ post.date | date_to_string }}</div>
   <h2>{{ post.title }} <a href="{{ post.url }}" title="[Permalink] {{ post.title }}" style="border: none;">&rarr;</a></h2>
 
