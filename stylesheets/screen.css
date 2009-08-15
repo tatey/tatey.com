@@ -196,6 +196,11 @@ blockquote
   text-align: center;
 }
 
+blockquote
+{
+  font-style: italic;
+}
+
 blockquote a,
 .about a
 {
