@@ -23,6 +23,11 @@ body
   padding-bottom: 3em;
 }
 
+ul
+{
+  list-style-type: square;
+}
+
 div#header
 {
   position: relative;
@@ -157,7 +162,7 @@ h2
 
 h3
 {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: bold;
   color: #c6e567;
 }
@@ -245,12 +250,7 @@ ul.images
     margin-bottom: 1.5em;
   }
   
-/* Other */
-
-ul
-{
-  list-style-type: square;
-}
+/* Archive */
 
 ol.archive
 {
@@ -268,6 +268,53 @@ ol.archive span.date
   text-align: right;
 }
 
+/* Pagination */
+
+div.left_column,
+div.right_column,
+form.center_column
+{
+  border-bottom: 3px solid #222;
+}
+
+div.left_column,
+div.right_column
+{
+  width: 25%;
+}
+
+div.left_column
+{
+  float: left;
+}
+
+div.right_column
+{
+  float: right;
+  text-align: right;
+}
+
+form.center_column
+{
+  float: left;
+  width: 50%;
+}
+
+  form.center_column fieldset
+  {
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-align: center;
+  }
+
+div.paginator
+{
+  margin: 3em 0;
+}
+
+/* Other */
+
 div.post_date
 {
   margin: 0;
@@ -276,16 +323,20 @@ div.post_date
   color: #aaa;
 }
 
-div.clear_both
-{
-  clear: both;
-}
-
 hr
 {
-  margin: 2.5em 0 3em 0;
   border-top: 1px solid #010101;
   border-bottom: 1px solid #575757;
   border-right: none;
   border-left: none;
+}
+
+hr.post
+{
+  margin: 3em 0 3.5em 0;
+}
+
+div.clear_both
+{
+  clear: both;
 }

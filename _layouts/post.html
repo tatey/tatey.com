@@ -5,10 +5,27 @@ layout: default
 <div class="post_date">{{ page.date | date_to_string }}</div>
 <h2>{{ page.title }}</h2>
 
-<div class="post">
-  {{ content }}
-</div>
+{{ content }}
 
-<hr/>
+<div class="paginator">
+  <hr/>
+  
+  <div class="left_column">
+    {% if page.previous %}
+      <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a>
+    {% endif %}
+  </div>
+
+  <div class="right_column">
+    {% if page.next %}
+      <a href="{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a>
+    {% endif %}
+  </div>
+  
+  <div class="clear_both">
+  </div>
+  
+  <hr/>
+</div>
 
 {% include about.html %}
