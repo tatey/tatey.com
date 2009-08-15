@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Observing Escalator Etiquette
+title: Observing escalator etiquette
 ---
 
 When using an escalator in Taiwan, you're expected to stand on the right unless you intend to pass quickly. It's a simple concept that everyone is already familiar with from driving (Taiwanese drive on the right). More importantly, observing escalator etiquette results in increased efficiency with large crowds.
