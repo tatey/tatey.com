@@ -101,7 +101,8 @@ h3,
 h4,
 blockquote,
 .about,
-div.post_date
+div.post_date,
+table thead tr th
 {
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;  
 }
@@ -253,6 +254,20 @@ ul.images
     float: left;
     margin-right: 1.5em;
     margin-bottom: 1.5em;
+  }
+
+/* Table */
+
+table
+{
+  width: 80%;
+  margin: 0 auto;
+}
+
+  table thead tr th
+  {
+    text-align: left;
+    text-decoration: underline;
   }
   
 /* Archive */
