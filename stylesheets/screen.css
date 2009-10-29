@@ -107,6 +107,13 @@ table thead tr th
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;  
 }
 
+code
+{
+  padding: 0 0.25em;
+  background: #111;
+  font-family: 'monaco', monospace;
+}
+
 a
 {
   border-bottom: 1px solid #ebffb4;

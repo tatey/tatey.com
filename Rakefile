@@ -16,7 +16,7 @@ task :server do
   jekyll('--server --auto')
 end
 
-desc 'Deploy to production'
-task :deploy do
+desc 'Build and deploy to production'
+task :deploy => :build do
   sh 'rsync -rtzh --progress --delete _site/ tatey@tatey.com:~/var/www/tatey.com/'
 end
