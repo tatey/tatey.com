@@ -15,5 +15,6 @@ While in the United States, I compiled a list of common words or phrases which w
 | The check     | The bill   | Could we have the *check* for the table? |
 | To-go         | Take-away  | A smoothie *to-go*, please               |
 | Single        | One dollar | Do you have a *single*?                  |
+| Elevator      | Lift       | *Elevator* doors are closing, quick!     |
 
 This list does not attempt to be a comprehensive or accurate comparison.
