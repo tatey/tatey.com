@@ -1,3 +1,4 @@
 ---
 pygments: true
 paginate: 5
+exclude: ['Rakefile', 'README.markdown']

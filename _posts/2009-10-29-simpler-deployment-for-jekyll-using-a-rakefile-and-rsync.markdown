@@ -12,3 +12,9 @@ In future, when someone asks me how they should deploy Jekyll, I will recommend 
 `$ rake deploy`
 
 Thanks to Scott Kyle for sharing his [Rakefile](http://github.com/appden/appden.github.com/blob/master/Rakefile).
+
+#### Updated 02 Nov 2009
+
+Wolfgang König brought to my attention that you can exclude files from being copied in the build using the exclude option. I've appended this to \_config.yml.
+
+`exclude: ['Rakefile', 'README.markdown']`
