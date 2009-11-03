@@ -15,6 +15,6 @@ Thanks to Scott Kyle for sharing his [Rakefile](http://github.com/appden/appden.
 
 #### Updated 02 Nov 2009
 
-Wolfgang König brought to my attention that you can exclude files from being copied in the build using the exclude option. I've appended this to \_config.yml.
+[Wolfgang König](http://wulfovitch.de/) brought to my attention that you can exclude files from being copied in the build using the exclude option. I've appended this to \_config.yml.
 
 `exclude: ['Rakefile', 'README.markdown']`
