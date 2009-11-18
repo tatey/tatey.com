@@ -340,6 +340,80 @@ div.paginator
   margin: 3em 0;
 }
 
+/* Sociable */
+
+div.center 
+{
+  margin: 0 5%;
+}
+
+div.sociable
+{
+  float: left;
+  width: 30%;
+}
+
+  div.sociable ul
+  {
+    margin: 0;
+    padding: 0 1em;
+    list-style-type: none;
+    background: #111;
+    min-height: 70em;
+  }
+    
+  div#flickr ul
+  {
+    padding: 1em;
+    min-height: 68em;
+  }
+  
+    div#twitter ul li,
+    div#lastfm ul li
+    {
+      padding: 1em 0;
+      border-top: #272727 1px solid;
+      border-bottom: #010101 1px solid;
+    }
+    
+    div#twitter ul li:first-child,
+    div#lastfm ul li:first-child
+    {
+      border-top: none;
+    }
+
+    div#twitter ul li:last-child,
+    div#lastfm ul li:last-child
+    {
+      border-bottom: none;
+    }    
+    
+      div#twitter ul li a
+      {
+        display: block;
+      }
+      
+      div#lastfm ul li div.left
+      {
+        float: left;
+      }
+      
+      div#lastfm ul li div.right
+      {
+        margin-left: 95px;
+      }
+      
+        div#lastfm ul li div.right span,
+        div#lastfm ul li div.right a
+        {
+          display: block;
+        }
+        
+    div#flickr ul li
+    {
+      float: left;
+    }
+
 /* Other */
 
 div.post_date
@@ -367,3 +441,4 @@ div.clear_both
 {
   clear: both;
 }
+
