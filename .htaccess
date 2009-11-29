@@ -1,0 +1,26 @@
+# Migrated from `date` to `pretty` permalink structure.
+RewriteEngine On
+
+# Directory index is never accessible.
+# 
+#   /index.html     -> /
+#   /foo/index.html -> /foo/
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteCond %{REQUEST_URI} ^\/.*index\.html$
+RewriteRule ^(.*)index.html$ http://tatey.com/$1 [R=301,L]
+
+# Continue to support deprecated permalink structure.
+# 
+#   /2009/09/09/foo.html -> /2009/09/09/foo/
+RewriteCond %{REQUEST_URI} \/\d{4}\/\d{2}\/\d{2}\/.+\.html$
+RewriteRule (.+).html$ http://tatey.com/$1/ [R=301,L]
+
+# Append trailing slash to directories.
+# Borrowed from http://gist.github.com/97822
+#
+#   /foo -> /foo/
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_FILENAME} !/$
+RewriteRule ^(.*)$ http://tatey.com/$1/ [R=301,L]
+
+ErrorDocument 404 http://tatey.com/not-found-404/

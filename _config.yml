@@ -1,4 +1,6 @@
 ---
-pygments: true
-paginate: 5
 exclude: ['Rakefile', 'README.markdown']
+growl: true
+paginate: 5
+permalink: pretty
+pygments: true
