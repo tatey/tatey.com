@@ -1,3 +1,12 @@
+/* Colors */
+
+@background-color: #222;
+@foreground-color: #111;
+@heading-color: #c6e567;
+@anchor-color: #ebffb4;
+@primary-text-color: #fff;
+@secondary-text-color: #aaa;
+
 /* Layout */
 
 html, body
@@ -8,11 +17,11 @@ html, body
 
 html
 {
-  background: #222;
+  background: @background-color;
   font-family: 'Georgia', 'DejaVu Serif', 'Times', 'Times New Roman', serif;
   font-size: 110%;
   line-height: 1.8em;
-  color: #fff;
+  color: @primary-text-color;
 }
 
 body
@@ -33,33 +42,20 @@ div#header
   position: relative;
   margin-bottom: 4em;
   padding-top: 1em;
-}
 
   ul#navigation
   {
     margin: 0;
     padding: 0;
     list-style-type: none;
-  }
 
-    ul#navigation li
+    li
     {
       display: block;
       float: left;
-      background: #111;
-    }
-
-    ul#navigation li.first
-    {
-      padding-left: 1.2em;
-    }
-
-    ul#navigation li.last
-    {
-      padding-right: 1.2em;
-    }
-
-      ul#navigation li a
+      background: @foreground-color;
+      
+      a
       {
         display: block;
         padding: 0.6em 0.6em;
@@ -68,16 +64,26 @@ div#header
         text-decoration: none;
         text-transform: uppercase;
         letter-spacing: 0.1em;
-        color: #fff;
-      }
+        color: @primary-text-color;
 
-      ul#navigation li a:hover,
-      ul#navigation li a:active,
-      ul#navigation li a:focus
-      {
-        background: #ebffb4;
-        color: #111;
+        :hover, :active, :focus
+        {
+          background: @anchor-color;
+          color: @foreground-color;
+        }
       }
+    }
+
+    .first
+    {
+      padding-left: 1.2em;
+    }
+
+    .last
+    {
+      padding-right: .first['padding-left'];
+    }
+  }
 
   div#lime
   {
@@ -87,46 +93,42 @@ div#header
     width: 202px;
     height: 202px;
     background: url("/images/layout/lime.png") right top no-repeat;
-  }
 
-  div#lime:hover
-  {
-    background-position: left bottom;
+    :hover
+    {
+      background-position: left bottom;
+    }
   }
+}
         
-/* Typography */
+/* Type */
 
-h2,
-h3,
-h4,
-blockquote,
-.about,
-div.post_date,
-table thead tr th
+.sans-serif
 {
-  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;  
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
 
-code
+.monospace
 {
-  padding: 0 0.25em;
-  background: #111;
   font-family: 'monaco', monospace;
 }
 
-a
+.secondary-text
 {
-  border-bottom: 1px solid #ebffb4;
-  text-decoration: none;
-  color: #ebffb4;
-}
+  .sans-serif;
+  color: @secondary-text-color;
 
-a:hover,
-a:active,
-a:focus
-{
-  color: #111;
-  background: #ebffb4;
+  a 
+  {
+    color: @primary-text-color;
+    border: none;
+
+    :hover, :focus, :active
+    {
+      background: @primary-text-color;
+      color: @background-color;
+    }
+  }
 }
 
 h1
@@ -134,24 +136,20 @@ h1
   margin-bottom: 0.375em;
   font-size: 5.5em;
   font-weight: normal;
-}
 
-  h1 a
+  a
   {
     border-bottom: none;
     text-decoration: none;
-    color: #fff;
-  }
+    color: @primary-text-color;
   
-  h1 a:hover,
-  h1 a:focus,
-  h1 a:active
-  {
-    background: transparent;
-    color: #ebffb4;
-  }
-
-    h1 a span
+    :hover, :focus, :active
+    {
+      background: transparent;
+      color: @anchor-color;
+    }
+    
+    span
     {
       position: relative;
       bottom: 0.5em;
@@ -159,25 +157,45 @@ h1
       padding-right: 0.5em;
       font-size: 0.25em;
     }
+  }
+}
   
 h2
 {
+  .sans-serif;
   font-size: 2em;
   font-weight: bold;
-  color: #c6e567;
+  color: @heading-color;
   line-height: 1.5em;
 }
 
 h3
 {
+  .sans-serif;
   font-size: 1.3em;
   font-weight: bold;
-  color: #c6e567;
+  color: @heading-color;
 }
 
 h4
 {
+  .sans-serif;
   text-transform: uppercase;
+}
+
+a
+{
+  border-bottom: 1px solid @anchor-color;
+  text-decoration: none;
+  color: @anchor-color;
+
+  :hover,
+  :active,
+  :focus
+  {
+    color: @foreground-color;
+    background: @anchor-color;
+  }
 }
 
 p
@@ -185,50 +203,30 @@ p
   letter-spacing: 0.05em;
 }
 
-blockquote,
-.about
-{
-  color: #aaa;
-}
-
 blockquote
 {
   margin: 1.5em 2.5em;
   padding-left: 1em;
-  border-left: 1px solid #aaa;
+  border-left: 1px solid @secondary-text-color;
+  font-style: italic;
+  .secondary-text;
 }
 
 .about
 {
   padding: 0 0.5em;
   text-align: center;
+  .secondary-text;
 }
 
-blockquote
+code
 {
-  font-style: italic;
+  padding: 0 0.25em;
+  background: @foreground-color;
+  .monospace;
 }
 
-blockquote a,
-.about a
-{
-  color: #fff;
-  border: none;
-}
-
-
-blockquote a:hover,
-blockquote a:focus,
-blockquote a:active,
-.about a:hover,
-.about a:focus,
-.about a:active
-{
-  background: #fff;
-  color: #222;
-}
-
-/* Image */
+/* Images */
 
 img
 {
@@ -239,7 +237,7 @@ img
 
 a:hover img
 {
-  border-color: #c6e567;
+  border-color: @heading-color;
 }
 
 img.img_left
@@ -254,28 +252,29 @@ ul.images
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
   
-  ul.images li img
+  li img
   {
     float: left;
     margin-right: 1.5em;
     margin-bottom: 1.5em;
   }
+}
 
-/* Table */
+/* Tables */
 
 table
 {
   width: 80%;
   margin: 0 auto;
-}
 
-  table thead tr th
+  thead tr th
   {
+    .sans-serif;
     text-align: left;
     text-decoration: underline;
   }
+}
   
 /* Archive */
 
@@ -284,15 +283,24 @@ ol.archive
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  span.date
+  {
+    float: left;
+    display: block;
+    width: 7em;
+    padding-right: 1em;
+    text-align: right;
+  }
 }
 
-ol.archive span.date
+/* Form */
+
+form fieldset 
 {
-  float: left;
-  display: block;
-  width: 7em;
-  padding-right: 1em;
-  text-align: right;
+  padding: 0;
+  margin: 0;
+  border: none;
 }
 
 /* Pagination */
@@ -301,7 +309,7 @@ div.left_column,
 div.right_column,
 form.center_column
 {
-  border-bottom: 3px solid #222;
+  border-bottom: 3px solid @background-color;
 }
 
 div.left_column,
@@ -328,114 +336,12 @@ div.right_column
   text-align: right;
 }
 
-form fieldset 
-{
-  padding: 0;
-  margin: 0;
-  border: none;
-}
-
 div.paginator
 {
   margin: 3em 0;
 }
 
-/* Sociable */
-
-div#twitter,
-div#lastfm
-{
-  width: 47%;
-}
-
-div#twitter 
-{
-  float: left;
-}
-
-div#lastfm
-{
-  float: right;
-}
-
-div#flickr
-{
-  padding: 1em 0 0 1em;
-  background: #111;
-}
-
-div#twitter ul,
-div#lastfm ul,
-div#flickr ul
-{
-  margin: 0;
-  list-style-type: none;
-}
-
-div#twitter ul,
-div#lastfm ul
-{
-  min-height: 55em;
-  padding: 0 1em;
-  background: #111;
-}
-
-  div#twitter ul li,
-  div#lastfm ul li
-  {
-    padding: 1em 0;
-    border-top: #272727 1px solid;
-    border-bottom: #010101 1px solid;
-  }
-  
-  div#twitter ul li:first-child,
-  div#lastfm ul li:first-child
-  {
-    border-top: none;
-  }
-
-  div#twitter ul li:last-child,
-  div#lastfm ul li:last-child
-  {
-    border-bottom: none;
-  }
-  
-    div#twitter ul li span,
-    div#lastfm ul li span
-    {
-      display: block;            
-    }
-    
-    div#lastfm ul li div.left
-    {
-      float: left;
-    }
-    
-    div#lastfm ul li div.right
-    {
-      margin-left: 5.25em;
-    }
-    
-div#flickr ul
-{
-  padding: 0em;
-}
-  
-  div#flickr ul li a img
-  {
-    float: left;
-    margin: 0 1em 1em 0;
-  }
-
-/* Other */
-
-div.post_date
-{
-  margin: 0;
-  line-height: 0;
-  font-weight: bold;
-  color: #aaa;
-}
+/* Horizontal Rule */
 
 hr
 {
@@ -448,6 +354,17 @@ hr
 hr.post
 {
   margin: 3em 0 3.5em 0;
+}
+
+/* Other */
+
+div.post_date
+{
+  margin: 0;
+  line-height: 0;
+  font-weight: bold;
+  .sans-serif;
+  color: @secondary-text-color;
 }
 
 div.clear_both

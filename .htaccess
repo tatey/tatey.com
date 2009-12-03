@@ -23,4 +23,9 @@ RewriteCond %{REQUEST_FILENAME} -d
 RewriteCond %{REQUEST_FILENAME} !/$
 RewriteRule ^(.*)$ http://tatey.com/$1/ [R=301,L]
 
+# Compress static assets
+SetOutputFilter DEFLATE
+AddOutputFilterByType DEFLATE text/html application/xml text/css text/javascript 
+
+# Pretty error page
 ErrorDocument 404 http://tatey.com/not-found-404/
