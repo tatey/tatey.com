@@ -27,7 +27,7 @@ This project in combination with my working experience of Jekyll has lead to me 
 
 ### LESS
 
-LESS is an extension to CSS which adds variables, nesting and mixins. Unlike [Sass](http://www.sass-lang.com/), LESS strives for familiarity and backwards compatibility with CSS. 
+LESS is an extension to CSS which adds variables, nesting and mixins. Unlike [Sass](http://www.sass-lang.com/), LESS strives for familiarity and backwards compatibility with CSS.
 
 After migrating from LESS, my stylesheets are more organised and reusable. Take a look at the [before](http://github.com/tatey/tatey.com/blob/a3a7b4c4775963f4c8cab39fcb63d612bd29eb7a/stylesheets/screen.css) and [after](http://github.com/tatey/tatey.com/blob/fbab4798beb7c12844d44165fa52467552b9640c/stylesheets/screen.less) for tatey.com.
 
@@ -49,3 +49,6 @@ Link to a published post by its name and the permalink tag will be compiled into
 
     <a href="/2009/09/09/foo/">Earlier post</a>
     
+#### Notes
+
+If you're looking for Haml and Sass compatibility, you ought to checkout [Henrik Nyh's fork](http://github.com/henrik/jekyll).
