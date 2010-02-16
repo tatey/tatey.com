@@ -52,3 +52,7 @@ Link to a published post by its name and the permalink tag will be compiled into
 #### Notes
 
 If you're looking for Haml and Sass compatibility, you ought to checkout [Henrik Nyh's fork](http://github.com/henrik/jekyll).
+
+#### Updated 16 Feb 2010
+
+My fork has been renamed to [Jekylless](http://github.com/tatey/jekylless/). {% permalink 'Read about the motivations', '2010-02-15-my-jekyll-fork-becomes-jekylless' %} behind the change.
