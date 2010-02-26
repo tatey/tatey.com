@@ -4,7 +4,7 @@ title: Zoomable Type is Mac OS X's "Show in Large Type" for jQuery
 time: '22:27'
 ---
 
-[Zoomable Type is a jQuery plugin](http://zoomabletype.tatey.com/) for reading small text on a display from far away. Text is upscaled to the largest size based on its width and the browser's viewpoint. 
+[Zoomable Type is a jQuery plugin](http://zoomabletype.tatey.com/) for reading small text on a display from far away. Text is upscaled to the largest size based on its width and the browser's viewport. 
 
 ![Zoomed text example](http://cloud.github.com/downloads/tatey/jquery.zoomable_type/preview.png)
 
