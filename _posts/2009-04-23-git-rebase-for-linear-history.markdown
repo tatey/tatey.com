@@ -3,9 +3,9 @@ layout: post
 title: Git rebase for linear history
 ---
 
-Subject: Suggestion to rebase after committing and before pushing  
-To: Development Team  
-Date: 20 April 1:54:29 PM
+Subject&#58; Suggestion to rebase after committing and before pushing  
+To&#58; Development Team  
+Date&#58; 20 April 1:54:29 PM
 
 ### What's the issue?
 
@@ -46,3 +46,13 @@ Cheers,
 Tatey
 
 PS: I've been secretly doing this.
+
+#### Updated 26 Feb 2010
+
+Lincoln Ramsay pointed out that `git pull` takes an optional `--rebase` argument. From the manual page.
+
+> Instead of a merge, perform a rebase after fetching. If there is a remote ref for the upstream branch, and this branch was rebased since last fetched, the rebase uses that information to avoid rebasing non-local changes. 
+
+Rebasing can become the default behaviour too.
+
+> To make this the default for branch &lt;name&gt;, set configuration branch.&lt;name&gt;.rebase to true. 
