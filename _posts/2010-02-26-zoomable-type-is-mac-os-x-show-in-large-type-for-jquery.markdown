@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Zoomable Type is Mac OS X's "Show in Large Type" for jQuery
+title: Zoomable Type is Mac OS X's &ldquo;Show in Large Type&rdquo; for jQuery
 time: '22:27'
 ---
 
