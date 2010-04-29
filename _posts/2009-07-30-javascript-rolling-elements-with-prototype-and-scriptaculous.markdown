@@ -13,4 +13,9 @@ JavaScript Rolling Elements is a small snippet of JavaScript that features:
 * Unobtrusive
 * Compatible with all modern browsers and IE6
 
-View [an example of it in action](http://tatey.github.com/javascript_rolling_elements/). The project is hosted on [GitHub](http://github.com/tatey/javascript_rolling_elements/), after starting life as a [Gist](http://gist.github.com/).
+<p><span class="s">View an example of it in action. The project is hosted on GitHub, after starting life as a Gist.</span></p>
+
+#### Updated 29 April 2010
+
+JavaScript Rolling Elements have been turned into a plugin. The project has been renamed to [rollable.scriptaculous](http://github.com/tatey/rollable.scriptaculous).
+View [an example of it in action](http://rollable.tatey.com).
