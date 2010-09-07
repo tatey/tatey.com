@@ -8,9 +8,9 @@ task :build do
   jekyll
 end
  
-desc 'Start server with --auto'
+desc 'Build and start server with --auto'
 task :server do
-  jekyll('--server --auto')
+  jekyll '--server --auto'
 end
 
 desc 'Build and deploy'
@@ -19,6 +19,5 @@ task :deploy => :build do
 end
 
 def jekyll(opts = '')
-  sh 'rm -rf _site'
   sh 'jekyll ' + opts
 end
