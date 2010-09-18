@@ -3,45 +3,17 @@ layout: default
 title: Tate Johnson
 ---
 
+<p class="n">Vivamus id mollis quam. Morbi ac commodo nulla. In condimentum.</p>
+<p class="b">Vivamus id mollis quam. Morbi ac commodo nulla. In condimentum.</p>
+<p class="i">Vivamus id mollis quam. Morbi ac commodo nulla. In condimentum.</p>
+<p class="bi">Vivamus id mollis quam. Morbi ac commodo nulla. In condimentum.</p>
+
+<p class="ttn">Vivamus id mollis quam. Morbi ac commodo nulla. In condimentum.</p>
+<p class="ttb">Vivamus id mollis quam. Morbi ac commodo nulla. In condimentum.</p>
+<p class="tti">Vivamus id mollis quam. Morbi ac commodo nulla. In condimentum.</p>
+<p class="ttbi">Vivamus id mollis quam. Morbi ac commodo nulla. In condimentum.</p>
+
 {% for post in paginator.posts %}
-  <div class="post_date">{{ post.date | date_to_string }}</div>
-  <h2>{{ post.title }} <a href="{{ post.url }}" title="[Permalink] {{ post.title }}" style="border: none;">&rarr;</a></h2>
-
+  <h2>{{ post.title }}</h2>
   {{ post.content }}
-
-  {% if post != paginator.posts.last %}
-    <hr class="post" />
-  {% endif %}
 {% endfor %}
-
-<div class="paginator">
-  <hr/>
-  
-  <div class="left_column">
-    {% if paginator.next_page %}
-      <a href="/page{{ paginator.next_page }}/">&larr; Older</a>
-    {% endif %}
-  </div>
-
-  <div class="center_column">
-    {% include search.html %}
-  </div>
-  
-  <div class="right_column">
-    {% if paginator.previous_page %}
-      <a href="
-        {% if paginator.previous_page == 1 %}
-          /
-        {% else %}
-          /page{{ paginator.previous_page }}
-        {% endif %}">Newer &rarr;</a>
-    {% endif %}
-  </div>
-
-  <div class="clear_both">
-  </div>
-
-  <hr/>
-</div>
-
-{% include about.html %}

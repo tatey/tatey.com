@@ -28,4 +28,4 @@ SetOutputFilter DEFLATE
 AddOutputFilterByType DEFLATE text/html application/xml text/css text/javascript 
 
 # Pretty error page
-ErrorDocument 404 http://tatey.com/not-found-404/
+ErrorDocument 404 http://tatey.com/404-not-found/

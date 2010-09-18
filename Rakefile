@@ -19,5 +19,5 @@ task :deploy => :build do
 end
 
 def jekyll(opts = '')
-  sh 'jekyll ' + opts
+  sh '/Users/tate/Code/jekylless/bin/jekyll ' + opts
 end
