@@ -1,13 +1,11 @@
 ---
 layout: post
-title: What I aspire to in minimal web design
+title: What I Aspire to in Minimal Web Design
 ---
 
-[![The Hypsometry Blog, by Christopher Boone](/images/posts/2009-11-10-what-i-aspire-to-in-minimal-web-design/hypsometry.jpg)](http://blog.hypsometry.com/)
+{% figure src: /images/posts/2009-11-10-what-i-aspire-to-in-minimal-web-design/hypsometry.jpg, href: http://blog.hypsometry.com/, caption: The Hypsometry Blog&comma; by Christopher Boone %}
 
-[![Dive Into HTML5](/images/posts/2009-11-10-what-i-aspire-to-in-minimal-web-design/diveintohtml5.jpg)](http://diveintohtml5.org/)
-
-Constantly impressed with what I find in the [Sites](http://wiki.github.com/mojombo/jekyll/sites) page on the Jekyll wiki (and my inbox).
+{% figure src: /images/posts/2009-11-10-what-i-aspire-to-in-minimal-web-design/diveintohtml5.jpg, href: http://diveintohtml5.org/, caption: Dive Into HTML5 %}
 
 #### Updated 11 Nov 2009
 

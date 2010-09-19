@@ -1,11 +1,9 @@
 ---
 layout: post
-title: Layouts with Smarty
+title: Layouts With Smarty
 ---
 
-[Smarty](http://smarty.net/) doesn't appear to support layouts, an incredibly useful concept for separating reusable markup in views.
-
-Documentation has an [example](http://smarty.net/manual/en/language.function.include.php) using the {include} tags for including a header and footer template in to each of your views. I think this approach is repetitive and not as flexible as it ought to be.
+[Smarty](http://smarty.net/) doesn't appear to support layouts, an incredibly useful concept for separating reusable markup in views. Documentation has an [example](http://smarty.net/manual/en/language.function.include.php) using the {include} tags for including a header and footer template in to each of your views. I think this approach is repetitive and not as flexible as it ought to be.
 
 My expectations:
 

@@ -1,44 +1,28 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://google-analytics.com/ga.js"></script>
+    <script type="text/javascript" src="/javascripts/hyphenator.js"></script>
+    <script type="text/javascript" src="/javascripts/default.js"></script>
+    <link rel="stylesheet" href="/stylesheets/screen.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/stylesheets/highlighting.css" type="text/css" media="all">
+    <link href="http://feeds2.feedburner.com/tatejohnson" rel="alternate" title="Tate Johnson" type="application/atom+xml">
+    <link href='/images/favicon.ico' rel='shortcut icon' type='image/ico'>
     <title>{{ page.title }}</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" href="/stylesheets/syntax_highlighting.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="/stylesheets/screen.css" type="text/css" media="all" />
-    <!--[if gte IE 6]>
-      <link rel="stylesheet" href="/stylesheets/screen_ie.css" type="text/css" media="all" />
-    <![endif]-->
-    <link href="http://feeds2.feedburner.com/tatejohnson" rel="alternate" title="Tate Johnson" type="application/atom+xml" />
-    <link href='/images/layout/favicon.ico' rel='shortcut icon' type='image/ico' />
   </head>
-
   <body>
-    <div id="header">
-      <h1><a href="/">tatey<span>dot</span>com</a></h1>
-
-      <ul id="navigation">
-        <li class="first"><a href="/">Blog</a></li>
-        <li><a href="/archive/">Archive</a></li>
-        <li class="last"><a href="/about/">About</a></li>
-      </ul>
-
-      <div id="lime">
-      </div>
-
-      <div class="clear_both">
-      </div>
-    </div>
-
+    <header>
+      <h1>Tate Johnson</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Blog</a></li>
+          <li><a href="/archive/">Archive</a></li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+      </nav>
+    </header>
     {{ content }}
-
-    <script type="text/javascript">
-      document.write(unescape("%3Cscript src='http://www.google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-      try {
-        var pageTracker = _gat._getTracker("UA-8340632-1");
-        pageTracker._trackPageview();
-      } catch(err) {}
-    </script>
   </body>
 </html>

@@ -1,17 +1,13 @@
 ---
 layout: post
-title: Don't know C# and love programming? Get on Stack Overflow
+title: Don't Know C# and Love Programming? Get on Stack Overflow
 ---
 
 Ryan Bates on Stack Overflow [via Twitter](http://twitter.com/rbates/status/3270391247).
 
 > I would like to see more Rails developers on [http://stackoverflow.com/](http://stackoverflow.com/)
 
-Great to see a [high profile Rails developer](http://railscasts.com/) encouraging all Rails developers to start asking and answering questions on [Stack Overflow](http://stackoverflow.com/).
-
-It's a step in the right direction, but not enough. The Stack Overflow community is heavily skewed towards C# development. If you don't know C# and prefer a less popular language (or set of tools), get involved. You're the perfect candidate for a [new contributor](http://stackoverflow.com/users/login).
-
-I've compiled five reasons why you ought to consider my invitation.
+Great to see a [high profile Rails developer](http://railscasts.com/) encouraging all Rails developers to start asking and answering questions on [Stack Overflow](http://stackoverflow.com/). It's a step in the right direction, but not enough. The Stack Overflow community is heavily skewed towards C# development. If you don't know C# and prefer a less popular language (or set of tools), get involved. You're the perfect candidate for a [new contributor](http://stackoverflow.com/users/login). I've compiled five reasons why you ought to consider my invitation.
 
 ### Share your knowledge
 

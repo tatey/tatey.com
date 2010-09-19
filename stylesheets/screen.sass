@@ -1,67 +1,224 @@
 ---
 ---
+
+$txthindent: 1.5em
+$txtvindent: 1.5em
+$docvindent: 3em
+
+// http://www.positioniseverything.net/easyclearing.html
+= clearfix 
+  &:after 
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
   
 /* Layout
 
-= large
-  font-size: 30px
+html
+  background: #fff
+  color: #000
+  
+body
+  width: 35em
+  margin:
+    left: auto
+    right: auto
+  padding-bottom: $docvindent
+  font:
+    family: 'CMU Serif', 'Georgia', serif
+    size: 1.3em
+    
+  & > header
+    margin: $docvindent 0
+    text-align: center
+  
+    h1
+      font-weight: normal
+      
+    nav ul 
+      margin: 0
+      padding: 0
+      list-style-type: none
+      
+      li
+        display: inline
+        
+        &:before
+          content: '•'
+          margin-right: 0.25em
+          
+        &:first-child:before
+          content: ''
+          margin-right: 0
+          
+  article footer
+    margin-top: 1em
+    color: #555
+                  
+  & > footer
+    position: relative
+    margin-top: $docvindent
+  
+    a
+      position: absolute
+      top: 0
+  
+    a:first-child
+      left: 0
+    
+    a:last-child
+      right: 0
+      
+    fieldset
+      display: inline
+      width: 100%
+      padding: 0
+      border: 0
+      text-align: center
+      
+/* Anchors
 
-p.n
-  font:
-    family: 'CMU Serif'
-    weight: normal
-    style: normal
-  +large
+a
+  color: #b22
+  text-decoration: none
+  border-bottom:
+    color: #b22
+    style: dotted
+    width: 1px
   
-p.b
-  font:
-    family: 'CMU Serif'
-    weight: bold
-    style: normal
-  +large
-  
-p.i
-  font:
-    family: 'CMU Serif'
-    weight: normal
-    style: italic
-  +large
+  &:visited
+    color: #bc8f8f
+    border-bottom-color: #bc8f8f
     
-p.bi
-  font:
-    family: 'CMU Serif'
-    weight: bold
-    style: italic
-  +large
-  
-p.ttn
-  font:
-    family: 'CMU Typewriter Text'
-    weight: normal
-    style: normal
-  +large
-  
-p.ttb
-  font:
-    family: 'CMU Typewriter Text'
-    weight: bold
-    style: normal
-  +large
-  
-p.tti
-  font:
-    family: 'CMU Typewriter Text'
-    weight: normal
-    style: italic
-  +large
-  
-p.ttbi
-  font:
-    family: 'CMU Typewriter Text'
-    weight: bold
-    style: italic
-  +large
+  &:hover, &:active
+    border-bottom-style: solid
+      
+/* Paragraphs
+
+blockquote
+  margin-left: $txthindent
+
+p
+  margin: 0
+  text:
+    align: justify
+    indent: $txthindent
     
+  &.noindent
+    text-indent: 0
+    
+span.period
+  margin-right: 0.5em
+  
+/* Images
+  
+img 
+  display: block
+  border: 0
+
+  &.single
+    margin:
+      top: $txtvindent
+      bottom: $txtvindent
+      left: auto
+      right: auto
+      
+  &.left
+    float: left
+    margin:
+      right: 1em
+      bottom: 1em
+      
+  &.right
+    float: right
+    margin:
+      left: 1em
+      bottom: 1em
+      
+figure
+  display: block
+  margin: $txtvindent 0
+  
+  img
+    margin: 0 auto
+  
+  figcaption
+    display: block
+    margin-top: 1em
+    text-align: center
+  
+/* Tables
+
+table 
+  width: 100%
+  margin: $txtvindent 0
+  border-collapse: collapse
+  
+  thead tr th
+    border-bottom: 1px solid #000
+  
+  th, td
+    padding: 0 0.5em
+    
+/* Code
+
+code
+  font-family: 'CMU Typewriter Text'
+
+pre
+  margin: $txtvindent 0
+  padding: 0.5em 1em
+  background: #eee
+  overflow: auto
+    
+/* Lists
+
+ul
+  padding-left: 0
+  margin-left: $txthindent + 1
+  
+ol
+  padding-left: 0
+  margin-left: $txthindent * 2
+  
+/* Archive Page
+
+ol#archive
+  margin: 0
+    bottom: $txtvindent
+  padding: 0
+  list-style-type: none
+  
+  li
+    margin-bottom: 0.5em
+    +clearfix
+  
+    time
+      float: left
+      display: block
+      width: 6em
+      
+    p
+      float: right
+      display: block
+      width: 29em
+  
+/* About Page
+    
+ul.images
+  margin: $txtvindent 0
+  padding: 0
+  list-style-type: none
+  +clearfix
+  
+  li 
+    float: left
+    padding: 
+      right: $txtvindent
+      bottom: $txthindent
+        
 /* Fonts
 
 @font-face

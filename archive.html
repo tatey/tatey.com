@@ -4,12 +4,11 @@ title: Archive
 ---
 
 <h2>Archive</h2>
-
-<ol class="archive">
+<ol id="archive">
   {% for post in site.posts %}
     <li>
-      <span class="date">{{ post.date | date_to_string }}</span>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <time datetime="{{ post.date | xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+      <p class="noindent"><a href="{{ post.url }}">{{ post.title }}</a></p>
     </li>
   {% endfor %}
 </ol>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jekyll meets DreamHost. Automated deployment for Jekyll with Git
+title: Jekyll Meets DreamHost. Automated Deployment For Jekyll With Git
 ---
 
 It has been just under a month since I launched this blog, and the first thing I promised myself was to automate deployment. If you have an existing [GitHub](http://github.com) account you might want to consider [GitHub Pages](http://pages.github.com/), it's quick and easy.
@@ -100,9 +100,7 @@ Bonus: You now have a redundant copy of your repository.
 
 #### Updated 31 May 2009
 
-Jay Williams followed this guide and experienced an annoying problem with the Git post-receive hook. After some trouble-shooting, it appeared that the hook was never executed because the user he was shelling in with didn't have the access to the compiled binaries in its path.
-
-Copying your `.bash_profile` to `.bashrc` should solve the issue for non-login shells.
+Jay Williams followed this guide and experienced an annoying problem with the Git post-receive hook. After some trouble-shooting, it appeared that the hook was never executed because the user he was shelling in with didn't have the access to the compiled binaries in its path. Copying your `.bash_profile` to `.bashrc` should solve the issue for non-login shells.
 
 {% highlight bash %}
 $ cd ~/

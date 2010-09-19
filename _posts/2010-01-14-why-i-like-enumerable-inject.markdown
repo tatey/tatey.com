@@ -1,11 +1,9 @@
 ---
 layout: post
-title: Why I like Enumerable#inject
+title: Why I Like Enumerable#inject
 ---
 
-Recently I've been helping a friend learn Ruby. Digging around first year university assignments, I stumbled on a method definition for calculating the annual interest on a bank balance that's compounded monthly.
-
-The original implementation was in Java, which you could imagine would be more verbose. 
+Recently I've been helping a friend learn Ruby. Digging around first year university assignments, I stumbled on a method definition for calculating the annual interest on a bank balance that's compounded monthly. The original implementation was in Java, which you could imagine would be more verbose. 
 
 {% highlight ruby %}
 def calculate_interest(rate)

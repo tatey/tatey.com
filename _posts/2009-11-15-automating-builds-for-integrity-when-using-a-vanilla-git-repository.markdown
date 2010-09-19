@@ -1,13 +1,9 @@
 ---
 layout: post
-title: Automating builds for Integrity when using a vanilla Git repository
+title: Automating Builds for Integrity When Using a Vanilla Git Repository
 ---
 
-[Integrity](http://integrityapp.com/) is a light-weight continuous integration server.
-
-It supports automatically building your projects when you configure a [post-receive hook on GitHub](http://help.github.com/post-receive-hooks/) to POST to your installation of Integrity. If you're not using GitHub, you can still achieve automated builds using a similar mechanism.
-
-A quick look at the *Fetch and build* button on the project page reveals the URL you need to POST for initiating a build. Create an executable script and include it in the post-receive hook of your vanilla Git repository.
+[Integrity](http://integrityapp.com/) is a light-weight continuous integration server. It supports automatically building your projects when you configure a [post-receive hook on GitHub](http://help.github.com/post-receive-hooks/) to POST to your installation of Integrity. If you're not using GitHub, you can still achieve automated builds using a similar mechanism. A quick look at the *Fetch and build* button on the project page reveals the URL you need to POST for initiating a build. Create an executable script and include it in the post-receive hook of your vanilla Git repository.
 
 {% highlight rb %}
 #!/usr/bin/env ruby
@@ -26,4 +22,6 @@ task :ci => ['db:migrate', 'test', 'cucumber']
 
 Lastly, update the build script for your project to run the continuous integration task.
 
-`rake ci`
+{% highlight bash %}
+rake ci
+{% endhighlight %}

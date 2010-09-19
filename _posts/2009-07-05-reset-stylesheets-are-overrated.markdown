@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reset stylesheets are overrated
+title: Reset Stylesheets are Overrated
 ---
 
 I've recently been involved in a project where the designer insisted on using a [reset stylesheet](http://meyerweb.com/eric/tools/css/reset/).

@@ -12,15 +12,13 @@ layout: nil
   <url>
     <loc>http://tatey.com/</loc>
     <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
-    <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>http://tatey.com/about/</loc>
-    <lastmod>2010-01-14</lastmod>
+    <lastmod>2010-09-19</lastmod>
   </url>
   <url>
     <loc>http://tatey.com/archive/</loc>
     <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
-    <changefreq>weekly</changefreq>
   </url>
 </urlset> 

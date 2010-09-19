@@ -1,6 +1,6 @@
 ---
 exclude: ['Rakefile', 'README.markdown']
-paginate: 5
+paginate: 10
 permalink: pretty
 pygments: true
 safe: false

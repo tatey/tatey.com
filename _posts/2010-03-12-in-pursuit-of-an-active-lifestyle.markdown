@@ -1,14 +1,10 @@
 ---
 layout: post
-title: In pursuit of an active lifestyle
+title: In Pursuit of an Active Lifestyle
 time: '23:39'
 ---
 
-Between work, study and personal interests I spend too many hours sitting in front of the computer. 
-
-After recently buying a second hand [bicycle](http://www.flickr.com/photos/tatejohnson/4350545597/), I've been developing regular riding habits. Riding the bicycle to uni, instead of the motorobike. Riding the bicycle to the local shops, instead of the car. More importantly, I've been achieving a minimum of thirty minutes per day.
-
-Short, regular rides are refreshing and enable you to feel alive again. [Adii Rockstar](http://adiirockstar.com/2010/03/life-alignment/) feels the same about running.
+Between work, study and personal interests I spend too many hours sitting in front of the computer. After recently buying a second hand [bicycle](http://www.flickr.com/photos/tatejohnson/4350545597/), I've been developing regular riding habits. Riding the bicycle to uni, instead of the motorobike. Riding the bicycle to the local shops, instead of the car. More importantly, I've been achieving a minimum of thirty minutes per day. Short, regular rides are refreshing and enable you to feel alive again. [Adii Rockstar](http://adiirockstar.com/2010/03/life-alignment/) feels the same about running.
 
 > I now go running for two possible reasons:
 >
