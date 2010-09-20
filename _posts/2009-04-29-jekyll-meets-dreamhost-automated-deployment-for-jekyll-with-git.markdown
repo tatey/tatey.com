@@ -98,16 +98,12 @@ $ git push dreamhost master
 
 Bonus: You now have a redundant copy of your repository.
 
-#### Updated 31 May 2009
+#### Updated 2009-05-31 {: .note }
 
 Jay Williams followed this guide and experienced an annoying problem with the Git post-receive hook. After some trouble-shooting, it appeared that the hook was never executed because the user he was shelling in with didn't have the access to the compiled binaries in its path. Copying your `.bash_profile` to `.bashrc` should solve the issue for non-login shells.
+{: .note }
 
-{% highlight bash %}
-$ cd ~/
-$ cp .bashrc .bashrc.old
-$ cp .bash_profile .bashrc
-{% endhighlight %}
-
-#### Updated 29 Oct 2009
+#### Updated 2009-10-29 {: .note }
 
 I no longer recommend using this configuration for deployment. See [simpler deployment for Jekyll using a Rakefile and rsync](/2009/10/29/simpler-deployment-for-jekyll-using-a-rakefile-and-rsync.html).
+{: .note }

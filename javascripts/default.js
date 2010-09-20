@@ -1,8 +1,7 @@
 (function($) {
   /**
-   * Default LaTeX-like formatting cannot be achieved with pure CSS. We
-   * need to provide additional elements and classes which can be styled
-   * with CSS. 
+   * LaTeX-like default formatting cannot be achieved with pure CSS. We
+   * need to provide additional elements and classes to hook in to.
    *
    * Specifically:
    *
@@ -28,7 +27,6 @@
   }
   
   $(document).ready(function() {
-    // Default LaTeX formatting
     $('p').paragraph();
     
     // Hyphenate paragraphs

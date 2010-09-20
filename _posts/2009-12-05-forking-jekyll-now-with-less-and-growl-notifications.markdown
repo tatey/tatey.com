@@ -41,10 +41,12 @@ Link to a published post by its name and the permalink tag will be compiled into
 
     <a href="/2009/09/09/foo/">Earlier post</a>
     
-#### Notes
+#### Note {: .note }
 
 If you're looking for Haml and Sass compatibility, you ought to checkout [Henrik Nyh's fork](http://github.com/henrik/jekyll).
+{: .note }
 
-#### Updated 16 Feb 2010
+#### Updated 2010-02-16 {: .note }
 
 My fork has been renamed to [Jekylless](http://github.com/tatey/jekylless/). [Read about the motivations](http://tatey.com/2010/02/15/my-jekyll-fork-becomes-jekylless) behind the change.
+{: .note }
