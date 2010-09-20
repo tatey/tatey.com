@@ -6,6 +6,7 @@ layout: default
   <h2>{{ page.title }}</h2>
   {{ content }}
   <footer>
+    <a rel="nofollow" href="{{ post.url }}" title="Permalink">&infin;</a>
     <time datetime="{{ page.date | xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
   </footer>
 </article>
