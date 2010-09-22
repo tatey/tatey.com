@@ -12,7 +12,7 @@ module Jekyll
     end
 
     def matches(ext)
-      ext =~ /sass/i
+      ext =~ /sass|scss/i
     end
 
     def output_ext(ext)
@@ -21,7 +21,7 @@ module Jekyll
 
     def convert(content)
       setup
-      Sass::Engine.new(content, :syntax => :sass).render
+      Sass::Engine.new(content, :style => :compressed).render
     end
   end
 

@@ -1,40 +1,48 @@
-(function($) {
+---
+---
+
+(function() {
   /**
    * LaTeX-like default formatting cannot be achieved with pure CSS. We
    * need to provide additional elements and classes to hook in to.
    *
    * Specifically:
    *
-   *   - Paragraphs after headings are not indented.
-   *   - Extra whitespace after periods. 
+   *  - Paragraphs after headings are not indented.
+   *  - Extra whitespace after periods. 
    *
-   * @return jQuery
+   * @return Void
    */
-  $.fn.paragraph = function() {
-    return this.each(function() {
-      var $this = $(this);
-      if (!$this.prev()[0] || $this.prev()[0].nodeName.match(/^(HEADER|H[1-6])$/i)) {
-        $this.addClass('noindent');
+  function paragraph(ps) {
+    for (var i = 0; i < ps.length; i++) {
+      var p  = ps[i],
+          s  = p.previousSibling,
+          cs = ['hyphenate'];
+      while (s && s.nodeType != 1) {
+        s = s.previousSibling;
       }
-      $this
-        .html(
-          $this
-            .html()
-            .replace(/\.(\s+)/g, '<span class="period">.</span>$1')
-        )
-        .addClass('hyphenate');
-    });
+      if (!s || s.nodeName.match(/^(HEADER|H[1-6])$/)) {
+        cs.push('noindent');
+      }
+      p.innerHTML = p.innerHTML.replace(
+        /\.(\s+)/g, 
+        '<span class="period">.</span>$1'
+      );
+      p.setAttribute(
+        'class',
+        cs.concat((p.getAttribute('class') || '').split(' ')).join(' ')
+      );
+    }
   }
   
-  $(document).ready(function() {
-    $('p').paragraph();
-    
-    // Hyphenate paragraphs
-    Hyphenator.run();
-    
-    // Google Analytics
-    try {
-      _gat._getTracker("UA-8340632-1")._trackPageview();
-    } catch(e) {}
+  DomReady.ready(function() {
+    // LaTeX-like default formatting
+     paragraph(document.getElementsByTagName('p'));
+
+     // Hyphenate paragraphs
+     Hyphenator.run();
+
+     // Google Analytics
+     _gat._getTracker("UA-8340632-1")._trackPageview();
   });
-})(jQuery);
+})();

@@ -1,10 +1,8 @@
 module Jekyll
   
   class GrowlHook < Hook
-    def setup
-      return if @setup
+    def initialize(config = {})
       require 'growl'
-      @setup = true
     rescue LoadError
       STDERR.puts 'You are missing a library required for growl. Please run:'
       STDERR.puts '  $ [sudo] gem install growl'
@@ -12,12 +10,10 @@ module Jekyll
     end
     
     def pre(site)
-      setup
       Growl.notify 'Building...', :title => 'Jekyll'
     end
     
     def post(site)
-      setup
       Growl.notify 'Build complete', :title => 'Jekyll'
     end
   end

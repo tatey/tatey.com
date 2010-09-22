@@ -1,4 +1,7 @@
-﻿/** @license Hyphenator 3.1.0 - client side hyphenation for webbrowsers
+---
+---
+
+/** @license Hyphenator 3.1.0 - client side hyphenation for webbrowsers
  *  Copyright (C) 2010  Mathias Nater, Zürich (mathias at mnn dot ch)
  *  Project and Source hosted on http://code.google.com/p/hyphenator/
  * 
@@ -1795,29 +1798,9 @@ var Hyphenator = (function (window) {
 			} catch (f) {
 				//FF throws an error if DOM.storage.enabled is set to false
 			}
-			if (!documentLoaded && !isBookmarklet) {
-				runOnContentLoaded(window, process);
-			}
-			if (isBookmarklet || documentLoaded) {
-				if (doFrames && fl > 0) {
-					for (i = 0; i < fl; i++) {
-						haveAccess = undefined;
-						//try catch isn't enough for webkit
-						try {
-							//opera throws only on document.toString-access
-							haveAccess = window.frames[i].document.toString();
-						} catch (e) {
-							haveAccess = undefined;
-						}
-						if (!!haveAccess) {
-							contextWindow = window.frames[i];
-							process();
-						}						
-					}
-				}
-				contextWindow = window;
-				process();
-			}
+			// Hyphenator attempts to work out if the DOM has loaded. We'd
+			// prefer to work it out instead.
+			process();
 		},
 		
 		/**

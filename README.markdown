@@ -18,4 +18,4 @@ Following directories and their contents are licensed under the [Creative Common
 
 * _posts/
 
-All other files and directories are licensed under the [MIT](http://www.opensource.org/licenses/mit-license.php). If you do use them, a link back to http://tatey.com would be appreciated but is not required.
+All other files and directories are licensed under the [MIT](http://www.opensource.org/licenses/mit-license.php) unless explicitly stated. If you do use them, a link back to http://tatey.com would be appreciated but is not required.
