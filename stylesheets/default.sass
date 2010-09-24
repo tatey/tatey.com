@@ -6,7 +6,6 @@ $txthindent: 1.5em
 $txtvindent: 1.5em
 $docvindent: 3em
 
-
 // http://www.positioniseverything.net/easyclearing.html
 = clearfix 
   &:after 
@@ -105,9 +104,16 @@ a
     border-bottom-style: solid
     
 h1, h2 
+
   a, a:visited
     color: $txtcolor
     border-bottom: none
+    
+  a:hover
+    border-bottom:
+      color: $txtcolor
+      width: 1px    
+      style: solid
       
 /* Paragraphs
 
