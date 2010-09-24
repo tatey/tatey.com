@@ -29,3 +29,6 @@ AddOutputFilterByType DEFLATE text/html application/xml text/css text/javascript
 
 # Pretty error page
 ErrorDocument 404 http://tatey.com/404-not-found/
+
+# Mime types
+AddType application/x-woff woff
