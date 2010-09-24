@@ -1,7 +1,7 @@
 ---
 exclude: ['Rakefile', 'README.markdown']
 markdown: maruku
-paginate: 10
+paginate: 5
 permalink: pretty
 pygments: true
 safe: false

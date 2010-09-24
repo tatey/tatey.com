@@ -5,10 +5,9 @@ title: Tate Johnson
 
 {% for post in paginator.posts %}
   <article>
-    <h2>{{ post.title }}</h2>
+    <h2><a href="{{ post.url }}" title="Permalink">{{ post.title }}</a></h2>
     {{ post.content }}
     <footer>
-      <a href="{{ post.url }}" title="Permalink: {{ post.title }}">&infin;</a>
       <time datetime="{{ post.date | xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
     </footer>
   </article>

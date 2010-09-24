@@ -1,9 +1,11 @@
 ---
 ---
 
+$txtcolor:   #000
 $txthindent: 1.5em
 $txtvindent: 1.5em
 $docvindent: 3em
+
 
 // http://www.positioniseverything.net/easyclearing.html
 = clearfix 
@@ -23,7 +25,7 @@ header, nav, article, footer, figure, figcaption
 
 html
   background: #fff
-  color: #000
+  color: $txtcolor
   
 body
   width: 35em
@@ -40,9 +42,7 @@ body
     text-align: center
   
     h1
-      font:
-        weight: normal
-        size: 3em
+      font-weight: normal
       
     nav ul 
       margin: 0
@@ -60,9 +60,11 @@ body
           content: ''
           margin-right: 0
           
-  article footer
-    margin-top: 1em
-    color: #555
+  article 
+  
+    footer
+      margin-top: 1em
+      color: #555
                   
   & > footer
     position: relative
@@ -101,6 +103,11 @@ a
     
   &:hover, &:active
     border-bottom-style: solid
+    
+h1, h2 
+  a, a:visited
+    color: $txtcolor
+    border-bottom: none
       
 /* Paragraphs
 
