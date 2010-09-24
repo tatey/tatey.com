@@ -8,29 +8,20 @@
    *
    * Specifically:
    *
-   *  - Paragraphs after headings are not indented.
    *  - Extra whitespace after periods. 
    *
    * @return Void
    */
   function paragraph(ps) {
     for (var i = 0; i < ps.length; i++) {
-      var p  = ps[i],
-          s  = p.previousSibling,
-          cs = ['hyphenate'];
-      while (s && s.nodeType != 1) {
-        s = s.previousSibling;
-      }
-      if (!s || s.nodeName.match(/^(HEADER|H[1-6])$/)) {
-        cs.push('noindent');
-      }
+      var p = ps[i];
       p.innerHTML = p.innerHTML.replace(
         /\.(\s+)/g, 
         '<span class="period">.</span>$1'
       );
       p.setAttribute(
         'class',
-        cs.concat((p.getAttribute('class') || '').split(' ')).join(' ')
+        (p.getAttribute('class') || '') + ' hyphenate'
       );
     }
   }
