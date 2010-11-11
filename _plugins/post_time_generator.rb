@@ -1,11 +1,10 @@
 module Jekyll
-  
-  # Specify a post's time in the YAML front matter. An in-hook
-  # guarantees we'll have all the post data before rendering the payload.
-  class TimeHook < Hook
+  # Specify the time for a post in the YAML front matter, not just the date.
+  # time: "22:16"
+  class PostTimeGenerator < Generator
     safe true
     
-    def in(site)
+    def generate(site)
       site.posts.each do |post|
         if post.data.has_key?('time')
           post.date = Time.parse("#{post.date.strftime('%Y-%m-%d')} #{post.data['time']}")
@@ -13,5 +12,4 @@ module Jekyll
       end
     end
   end
-  
 end

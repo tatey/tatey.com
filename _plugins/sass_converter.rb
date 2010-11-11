@@ -1,5 +1,7 @@
 module Jekyll
-
+  # Compiled Sass into CSS. You must specify an empty YAML front matter
+  # at the beginning of the file.
+  # sass|sccs -> .css
   class SassConverter < Converter
     def setup
       return if @setup
@@ -24,5 +26,4 @@ module Jekyll
       Sass::Engine.new(content, :style => :compressed).render
     end
   end
-
 end

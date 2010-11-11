@@ -1,5 +1,7 @@
 module Jekyll
-
+  # Compresses your JavaScript using the YUI compressor. You must specify an 
+  # empty YAML front matter at the beginning of the file.
+  # .js -> .min.js
   class JavaScriptMinifierConverter < Converter
     def setup
       return if @setup
@@ -24,5 +26,4 @@ module Jekyll
       YUI::JavaScriptCompressor.new(:munge => true).compress(content)
     end
   end
-
 end
