@@ -23,7 +23,11 @@ module Jekyll
 
     def convert(content)
       setup
-      Sass::Engine.new(content, :style => :compressed).render
+      begin
+        Sass::Engine.new(content, :style => :compressed).render
+      rescue => e
+        puts "Sass Exception: #{e.message}"
+      end
     end
   end
 end
