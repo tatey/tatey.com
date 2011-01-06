@@ -6,7 +6,7 @@ time: '23:13'
 
 [![Screenshot](/images/posts/2011-01-06-replicating-view-for-header-section-in-uitableview/customtableview_s.png)](/images/posts/2011-01-06-replicating-view-for-header-section-in-uitableview/customtableview.png)
 
-When building [Antenna Mate](http://antennamate.com), I wanted to use a UITableView with the grouped style that preserved the appearance of labels in the header. While Apple makes it easy to change the background, there's no mechanism for changing label properties for the header view in the same way. You need to create a custom header view and replicate the default label. After much tweaking, here is how to do it.
+When building [Antenna Mate](http://antennamate.com), I wanted to use a UITableView with the grouped style that preserved the appearance of labels in the header. While Apple makes it easy to change the background, I could find no mechanism for changing label properties for the header view in the same way. You need to create a custom header view and replicate the default label. After much tweaking, here is how to do it.
 
 {% highlight objectivec %}
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
