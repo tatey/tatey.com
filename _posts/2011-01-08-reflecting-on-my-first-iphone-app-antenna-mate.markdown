@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reflecting on my first iPhone app&#58; Antenna Mate
+title: Reflecting on my First iPhone App&#58; Antenna Mate
 time: '12:14'
 ---
 
@@ -8,7 +8,7 @@ Now that [Antenna Mate](http://antennamate.com) is available on the [App Store](
 
 [![Antenna Mate iPhone 4](/images/posts/2011-01-08-reflecting-on-my-first-iphone-app-antenna-mate/antennamateiphone.jpg)](http://antennamate.com)
 
-Antenna Mate was designed and developed over three months in-between exams, socialising and starting full-time work. Unlike other Ruby on Rails developers, I was introduced to Objective-C/GNUStep at university in [2501ICT](http://www3.griffith.edu.au/03/STIP4/app?page=CourseEntry&service=external&sp=S2501ICT). It provided me with the foundation of compilation, pointers, syntax, memory management and the standard library. 
+Antenna Mate was designed and developed over three months in-between finishing uni, socialising and starting full-time work. I was introduced to Objective-C/GNUStep at uni in [2501ICT](http://www3.griffith.edu.au/03/STIP4/app?page=CourseEntry&service=external&sp=S2501ICT). It provided me with the foundation of compilation, pointers, syntax, memory management and the standard library. 
 
 My understanding of the MVC paradigm is Rails' implementation of MVC. After I started fleshing out Antenna Mate with Objective-C/Cocoa it became obvious that I needed to learn a different implementation of MVC. This was the biggest hurdle coming into Objective-C/Cocoa from Ruby on Rails. Controllers in Rails are thin, maintain minimal state and know nothing about the view. Controllers in Objective-C/Cocoa are larger, maintain more state and respond to events that occur in the view. They're better thought of as view controllers.
 
@@ -16,7 +16,9 @@ Objective-C and Ruby share similarities. Firstly, they're both dynamically typed
 
 Many introductory Objective-C/Cocoa developers complain about reference counting. Referencing counting is straight-forward and when you follow the Cocoa conventions you know when to retain or release an object. The bigger issues are verbosity and plumbing. In comparison to Ruby on Rails, Objective-C/Cocoa makes you feel like you're writing a lot of repetitive code to connect objects together. Objective-C 2.0 is a welcome improvement to the language, but it's impossible to write code as elegantly or as tersely as Ruby. 
 
-Custom graphics can take more time than writing code. You need to design and test your graphics on the actual devices. The iPhone 4 has a dense display capable of showing great detail where the iPhone 3GS cannot. Laying out graphics on your computer display is very different from using it on the device. If you care about a good experience for your users, you should get your hands on each of the devices that your app will be available on. It's like testing a website in different browsers. You need to balance maintenance effort with consistency across devices. In addition, don't expect to be able to alway resize rasterised graphics from @2x resolution to @1x resolution. If the graphic is too detailed, you'll need to recreate the graphic at @1x with less detail. 
+Like Rails, Cocoa is a fully featured and mature framework that provides you with almost everything you need. Built-in views are highly reusable, the Core Location, Core Animation and Core Data frameworks are well thought out and provide you with enough flexibility to use in a variety of different applications. Animations are easy, almost too easy. It's insane how little code you need to write to smoothly rotate an indicator on the display. When you combine that with Xcode, Interface Builder, Instruments and iOS Simulator you get the benefit of an integrated toolset for writing code, debugging, inspecting and testing your app. As a TextMate user, Xcode feels big and clunky but it's the best supported tool for developing in Objective-C/Cocoa. 
+
+Custom graphics can take more time than writing code. You need to design and test your graphics on the actual devices. The iPhone 4 has a dense display capable of showing great detail where the iPhone 3GS cannot. Laying out graphics on your computer display is very different from using it on the device. If you care about a good experience for your users, you should get your hands on each of the devices that your app will be available on. It's like testing a website in different browsers. You need to balance maintenance effort with consistency across devices. In addition, don't expect to be able to alway resize rasterised graphics from @2x resolution to @1x resolution. If the graphic is too detailed, you'll need to recreate the graphic at @1x with less detail.
 
 Finally, when it comes time to submit your app to the App Store, you should read all the documentation Apple provides. If you're intending to sell apps in Australia, you must be registered for GST irrespective of your GST turnover. As income on the side, my accountant recommends reporting annually on a cash basis. You'll also need to complete a tax declaration for the IRS (US equivalent of ATO). Antenna Mate was submitted to the App Store on the 30/Dec and ready for sale on 04/Jan. It was under review for about 6 hours and is only available on the Australian App Store. If you've thought about all the use cases (Eg: Core Location turned off for Core Location dependent app) and comply with the App Store guidelines then there is no reason why your app should be refused.
 

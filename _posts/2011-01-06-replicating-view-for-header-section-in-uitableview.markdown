@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Replicating view for header section in UITableView
+title: Replicating View for Header Section in UITableView
 time: '23:13'
 ---
 
