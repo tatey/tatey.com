@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Obligatory Hello, World!
-time: '23:45'
 ---
 
 I've spent a good part of today on the seventh iteration of tatey.com.

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Reflecting on my First iPhone App&#58; Antenna Mate
-time: '12:14'
 ---
 
 Now that [Antenna Mate](http://antennamate.com) is available on the [App Store](http://itunes.apple.com/au/app/antenna-mate/id411272547?mt=8), I'd like to reflect on my experience developing an iPhone application from the perspective of a Ruby on Rails developer.

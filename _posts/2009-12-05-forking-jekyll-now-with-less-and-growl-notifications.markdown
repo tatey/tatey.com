@@ -25,7 +25,7 @@ LESS is an extension to CSS which adds variables, nesting and mixins. Unlike [Sa
 
 ### Growl notifications
 
-{% figure src: /images/posts/2009-12-05-forking-jekyll-now-with-less-and-growl-notifications/growl.jpg, caption: Growl notifications with Jekyll build statuses %}
+![Growl notifications with Jekyll build statuses](/images/posts/2009-12-05-forking-jekyll-now-with-less-and-growl-notifications/growl.jpg)
 
 Stop killing your browser's reload button and let Jekyll notify you when the build is complete.
 
@@ -41,12 +41,10 @@ Link to a published post by its name and the permalink tag will be compiled into
 
     <a href="/2009/09/09/foo/">Earlier post</a>
     
-#### Note {: .note }
+#### Note
 
 If you're looking for Haml and Sass compatibility, you ought to checkout [Henrik Nyh's fork](http://github.com/henrik/jekyll).
-{: .note }
 
-#### Updated 2010-02-16 {: .note }
+#### Updated 2010-02-16 
 
 My fork has been renamed to [Jekylless](http://github.com/tatey/jekylless/). [Read about the motivations](http://tatey.com/2010/02/15/my-jekyll-fork-becomes-jekylless) behind the change.
-{: .note }

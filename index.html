@@ -3,25 +3,18 @@ layout: default
 title: Tate Johnson
 ---
 
-{% for post in paginator.posts %}
-  <article>
-    <h2><a href="{{ post.url }}" title="Permalink">{{ post.title }}</a></h2>
-    {{ post.content }}
-    <footer>
+<article>
+  <time datetime="{{ site.posts.first.date | xmlschema }}">{{ site.posts.first.date | date: "%d %b" }}</time>
+  <h2><a href="{{ site.posts.first.url }}">{{ site.posts.first.title }}</a></h2>
+  {{ site.posts.first.content }}
+</article>
+<hr>
+<ol id="posts">
+  {% for post in site.posts offset:1 %}
+    <li>
       <time datetime="{{ post.date | xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
-    </footer>
-  </article>
-{% endfor %}
-<footer>
-  {% if paginator.next_page %}
-    <a href="/page{{ paginator.next_page }}/">&larr; Older</a>
-  {% endif %}
-  {% include search.html %}
-  {% if paginator.previous_page %}
-    {% if paginator.previous_page == 1 %}
-      <a href="/">Newer &rarr;</a>
-    {% else %}
-      <a href="/page{{ paginator.previous_page }}">Newer &rarr;</a>
-    {% endif %}
-  {% endif %}
-</footer>
+      <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+    </li>
+  {% endfor %}
+</ol>
+{% include footer.html %}

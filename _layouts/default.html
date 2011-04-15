@@ -3,31 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <!--[if lt IE 9]>
-      <script type="text/javascript" src="/javascripts/html5.min.js"></script>
-    <![endif]-->
-    <script type="text/javascript" src="http://google-analytics.com/ga.js"></script>
-    <script type="text/javascript" src="/javascripts/domready.min.js"></script>
-    <script type="text/javascript" src="/javascripts/hyphenator.min.js"></script>
-    <script type="text/javascript" src="/javascripts/default.min.js"></script>
-    <link rel="stylesheet" href="/stylesheets/default.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="/stylesheets/small.css" type="text/css" media="screen and (max-device-width: 480px)">
-    <link rel="stylesheet" href="/stylesheets/medium.css" type="text/css" media="screen and (max-device-width: 1024px)">
+    <link href="/stylesheets/default.css" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/highlight.css" rel="stylesheet" type="text/css">
     <link href="http://feeds2.feedburner.com/tatejohnson" rel="alternate" title="Tate Johnson" type="application/atom+xml">
     <link href='/images/favicon.ico' rel='shortcut icon' type='image/ico'>
-    <!-- Readable JS and CSS at http://github.com/tatey/tatey.com/. Powered by Jekyll -->
   </head>
   <body>
-    <header>
-      <h1><a href="/">Tate Johnson</a></h1>
-      <nav>
-        <ul>
-          <li><a href="/">Blog</a></li>
-          <li><a href="/archive/">Archive</a></li>
-          <li><a href="/about/">About</a></li>
-        </ul>
-      </nav>
-    </header>
+    <h1><a href="{{ base.url }}/">tatey<span>.</span>com</a></h1>
+    <nav>
+      <ul>
+        <li><a href="{{ base.url }}/">Blog</a></li>
+        <li><a href="{{ base.url }}/about/">About</a></li>
+      </ul>
+    </nav>
     {{ content }}
   </body>
 </html>

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Replicating View for Header Section in UITableView
-time: '23:13'
 ---
 
 [![Screenshot](/images/posts/2011-01-06-replicating-view-for-header-section-in-uitableview/customtableview_s.png)](/images/posts/2011-01-06-replicating-view-for-header-section-in-uitableview/customtableview.png)

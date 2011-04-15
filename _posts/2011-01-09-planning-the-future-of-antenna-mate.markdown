@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Planning the Future of Antenna Mate
-time: '11:34'
 ---
 
 [Antenna Mate's](http://antennamate.com) future is increased flexibility, more relevant data and availability in foreign markets. The app was originally conceptualised by [Adrian Frost](http://twitter.com/adrianfrost) out of the frustration of aligning TV antennas and allocating channels in commercial MATV installations. Antenna Mate was designed around use cases that supported the nature of Adrian's work without considering user cases for other demographics. 

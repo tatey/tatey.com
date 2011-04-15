@@ -36,7 +36,6 @@ Cheers, Tatey
 
 PS: I've been secretly doing this.
 
-#### Updated 2010-02-26 {: .note }
+#### Updated 2010-02-26
 
 Lincoln Ramsay pointed out that `git pull` takes an optional `--rebase` argument. [Read the manual for an example](http://www.kernel.org/pub/software/scm/git/docs/git-pull.html).
-{: .note }

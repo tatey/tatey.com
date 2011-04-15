@@ -1,7 +1,6 @@
 ---
 layout: post
 title: JavaScript API
-time: '17:49'
 ---
 
 Poor documentation always put me off learning JavaScript. Most of what I had learnt came from miscellaneous tutorials, other people's code and my own experimentation. When I started learning Java, searching for "Java API" yields the 1.5.0 documentation. Likewise, Ruby's API documentation is the first result for "Ruby API". If the keywords "JavaScript API" do not yield anything useful on the first few pages of Google, it must not exist.

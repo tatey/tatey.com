@@ -1,12 +1,26 @@
 ---
 ---
 
-$txtcolor:   #000
-$txthindent: 1.5em
-$txtvindent: 1.5em
-$docvindent: 3em
+// Variables
 
-// http://www.positioniseverything.net/easyclearing.html
+$fill1: #111
+$fill2: #222
+$link1: #EBFFB4
+$link2: #C6E567
+$text1: #FFF
+$text2: darken($text1, 30%)
+
+// Mixins
+
+= reset
+  margin: 0
+  padding: 0
+  border: none
+  
+= reset-list
+  +reset
+  list-style-type: none
+
 = clearfix 
   &:after 
     content: "."
@@ -15,447 +29,281 @@ $docvindent: 3em
     clear: both
     visibility: hidden
     
-/* HTML5
+= serif
+  font-family: 'Georgia', 'Times New Roman', serif
 
-header, nav, article, footer, figure, figcaption
-  display: block
+= sans-serif
+  font-family: 'Helvetica Neue', 'Helvetica', sans-serif
   
-/* Layout
+= monospace
+  font-family: monospace
+  
+= ease-in-out
+  -webkit-transition: all 350ms ease-in-out
+  
+= format
+  line-height: 1.8em
+  
+= link
+  a
+    border-bottom: 1px solid $link1
+    color: $link1
+    text-decoration: none
+  
+    &:hover, &:focus
+      +ease-in-out
+      border-bottom-color: $fill1
+      color: $fill1
+      background: $link1
 
+// Layout
+  
 html
-  background: #fff
-  color: $txtcolor
-  
+  +reset
+  background: $fill2
+  color: $text1
+  +serif
+
 body
-  width: 35em
-  margin:
-    left: auto
-    right: auto
-  padding-bottom: $docvindent
+  +reset
+  position: relative
+  width: 44em
+  max-width: 90%
+  margin: 2em auto
+  font-size: 1.1em
+  
+h1
+  +reset
+  min-height: 202px
+  background: 
+    image: url(/images/lime.png) 
+    position: right top
+    repeat: no-repeat
   font:
-    family: 'CMU Serif', 'Georgia', serif
-    size: 1.3em
-    
-  & > header
-    margin: $docvindent 0
-    text-align: center
-  
-    h1
-      font-weight: normal
-      
-    nav ul 
-      margin: 0
-      padding: 0
-      list-style-type: none
-      
-      li
-        display: inline
+    size: 5.5em
+    weight: normal  
+
+  &:hover
+    background-position: right bottom
+
+  a
+    color: $text1
+    text-decoration: none
+
+    &:hover
+      color: $link1
+
+      span:after
+        color: $link1
+
+    span
+      font-size: 0.01em
+      color: $fill2
+
+      &:after
+        content: 'dot'
+        position: relative
+        bottom: 0.5em
+        padding-left: 0.25em
+        padding-right: 0.5em
+        font-size: 25em
+        color: $text1
         
-        &:before
-          content: '•'
-          margin-right: 0.25em
-          
-        &:first-child:before
-          content: ''
-          margin-right: 0
-          
-  article 
-  
-    footer
-      margin-top: 1em
-      color: #555
-                  
-  & > footer
-    position: relative
-    margin-top: $docvindent
-  
+nav > ul
+  +reset-list
+  position: absolute
+  top: 8.75em
+  left: 0
+  +clearfix
+
+  li
+    display: block
+    float: left
+
     a
-      position: absolute
-      top: 0
+      +reset
+      +ease-in-out
+      padding: 0.75em
+      background: $fill1
+      font-size: 1.5em
+      letter-spacing: 0.1em
+      text:
+        transform: uppercase
+        decoration: none
+      color: $text1
+
+      &:hover, &:active
+        background: $link1
+        color: $fill2
+
+    &:first-child:before, &:last-child:after
+      content: ''
+      padding:
+        top: 0.75em
+        bottom: 0.75em
+      background: $fill1
+      font-size: 1.5em
+      
+    &:first-child:before
+      padding-left: 1em
+    
+    &:last-child:after
+      padding-right: 1em
+      
+footer > p
+  +sans-serif
+    
+article
+
+  time
+    display: block
+    margin:
+      top: 2.5em
+      bottom: 0.25em
+    font-weight: bold
+    text-transform: uppercase
+    color: $text2
+    +sans-serif
+
+  h2 
+    margin-top: 0
+
+// Common
+
+h2, h3
+  color: $link2
+  +sans-serif
   
-    a:first-child
-      left: 0
-    
-    a:last-child
-      right: 0
-      
-    fieldset
-      display: inline
-      width: 100%
-      padding: 0
-      border: 0
-      text-align: center
-      
-/* Anchors
+  a
+    text-decoration: none
+    color: $link2
 
-a
-  color: #b22
-  text-decoration: none
-  border-bottom:
-    color: #b22
-    style: dotted
-    width: 1px
+h2
+  font-size: 2em
   
-  &:visited
-    color: #bc8f8f
-    border-bottom-color: #bc8f8f
+h3 
+  font-size: 1.5em
     
-  &:hover, &:active
-    border-bottom-style: solid
-    
-  img
-    margin: $txtvindent auto
-    
-h1, h2 
+h4
+  +sans-serif
+  
+  & + p
+    padding: 1em
+    background: $fill1
 
-  a, a:visited
-    color: $txtcolor
-    border-bottom: none
-    
-  a:hover
-    border-bottom:
-      color: $txtcolor
-      width: 1px    
-      style: solid
-      
-/* Paragraphs
-
-blockquote
-  margin-left: $txthindent
+img
+  margin: 0 auto
+  display: block
 
 p
-  margin: 0
-  text:
-    align: justify
-    indent: $txthindent
-    
-h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p, header + p
-  text-indent: 0
-    
-span.period
-  margin-right: 0.5em
-  
-/* Images
-  
-img 
-  display: block
-  border: 0
+  +format
+  +link
+  margin-bottom: 1.25em
 
-  &.single
-    margin:
-      top: $txtvindent
-      bottom: $txtvindent
-      left: auto
-      right: auto
-      
-  &.left
-    float: left
-    margin:
-      right: $txtvindent
-      bottom: $txthindent / 2
-      
-  &.right
-    float: right
-    margin:
-      left: $txtvindent
-      bottom: $txthindent / 2
-      
-figure
-  margin: $txtvindent 0
-  
-  img
-    margin: 0 auto
-  
-  figcaption
-    margin-top: 1em
-    text-align: center
-  
-/* Tables
-
-table 
-  width: 100%
-  margin: $txtvindent 0
-  border-collapse: collapse
-  
-  thead tr th
-    border-bottom: 1px solid #000
-  
-  th, td
-    padding: 0 0.5em
-    
-/* Code
-
-code
-  font-family: 'CMU Typewriter Text'
-
-pre
-  margin: $txtvindent 0
-  padding: 0.5em 1em
-  background: #eee
-  overflow: auto
-    
-/* Lists
-
-ul
-  padding-left: 0
-  margin-left: $txthindent + 1
-  
-ol
-  padding-left: 0
-  margin-left: $txthindent * 2
-  
-/* Notes
-
-h3.note, h4.note, h5.note
-  font-style: italic
-  margin:
-    left: 0.75em
-    bottom: 0.5em
-
-p.note
-  padding: 0.75em 
-  border: 1px solid #000
-  
-/* Archive Page
-
-ol#archive
-  margin: 0
-    bottom: $txtvindent
-  padding: 0
-  list-style-type: none
+ol, ul 
+  +format
+  +link
   
   li
-    margin-bottom: 0.5em
-    +clearfix
+    margin-bottom: 0.625em
     
+    &:last-child
+      margin-bottom: 0
+
+hr
+  margin: 1.5em 0
+  border:
+    top:
+      color: $fill1
+      style: solid
+      width: 1px
+    bottom:
+      color: lighten($fill1, 20%)
+      style: solid
+      width: 1px
+    left: none
+    right: none
+    
+table 
+  width: 100%
+  border-collapse: collapse
+
+  thead tr th
+    text-align: left
+    border-bottom: 1px solid $text1
+    +sans-serif
+
+  th, td
+    padding: 0.25em 0.5em
+    
+blockquote
+  padding-left: 1em
+  border-left: 1px solid $text2
+  color: $text2
+  font-style: italic
+  +sans-serif
+  
+code
+  +monospace
+
+pre
+  padding: 1em
+  overflow: auto
+  background: #111
+    
+// Uncommon
+
+img#left
+  float: left
+  margin:
+    right: 1.5em
+    bottom: 1em
+    
+ul#images
+  +reset-list
+  +clearfix
+  padding-top: 0.5em
+  
+  li
+    float: left
+    margin:
+      right: 1.5em
+      bottom: 1.5em
+
+ol#posts
+  +reset-list
+
+  li
+    +clearfix
+    margin-bottom: 0.3125em
+
     time
       float: left
       display: block
-      width: 6em    
-      
+      width: 6em
+
     p
+      +reset
       float: right
-      width: 29em
-      text:
-        align: left
-        indent: 0
-  
-/* About Page
-    
-ul.images
-  margin: $txtvindent 0
-  padding: 0
-  list-style-type: none
+      width: 37em
+
+div#paginator
+  position: relative
+  +link
   +clearfix
-  
-  li 
-    float: left
-    padding: 
-      right: $txtvindent
-      bottom: $txthindent
-      
-@media screen and (max-device-width: 480px)
-  font-size: 5em
-        
-/* Fonts
 
-@font-face
-  font:
-    family: 'CMU Serif'
-    weight: normal
-    style: normal
-  src: url('/fonts/cmu_seri_roman.eot')
-  src: url('/fonts/cmu_serif_roman.woff') format('woff'), url('/fonts/cmu_serif_roman.ttf') format('truetype')
+  a
+    position: absolute
+    top: 0
 
-@font-face
-  font:
-    family: 'CMU Serif'
-    weight: bold
-    style: normal
-  src: url('/fonts/cmu_serif_bold.eot')
-  src: url('/fonts/cmu_serif_bold.woff') format('woff'), url('/fonts/cmu_serif_bold.ttf') format('truetype')
-  
-@font-face
-  font:
-    family: 'CMU Serif'
-    weight: normal
-    style: italic
-  src: url('/fonts/cmu_serif_italic.eot')
-  src: url('/fonts/cmu_serif_italic.woff') format('woff'), url('/fonts/cmu_serif_italic.ttf') format('truetype')
+    &#left
+      left: 0
 
-@font-face
-  font:
-    family: 'CMU Serif'
-    weight: bold
-    style: italic
-  src: url('/fonts/cmu_serif_bold_italic.eot')
-  src: url('/fonts/cmu_serif_bold_italic.woff') format('woff'), url('/fonts/cmu_serif_bold_italic.ttf') format('truetype')
+    &#right
+      right: 0
 
-@font-face
-  font:
-    family: 'CMU Typewriter Text'
-    weight: normal
-    style: normal
-  src: url('/fonts/cmu_tt_regular.eot')
-  src: url('/fonts/cmu_tt_regular.woff') format('woff'), url('/fonts/cmu_tt_regular.ttf') format('truetype')
-
-@font-face
-  font:
-    family: 'CMU Typewriter Text'
-    weight: bold
-    style: normal
-  src: url('/fonts/cmu_tt_bold.eot')
-  src: url('/fonts/cmu_tt_bold.woff') format('woff'), url('/fonts/cmu_tt_bold.ttf') format('truetype')
-
-@font-face
-  font:
-    family: 'CMU Typewriter Text'
-    weight: normal
-    style: italic
-  src: url('/fonts/cmu_tt_oblique.eot')
-  src: url('/fonts/cmu_tt_oblique.woff') format('woff'), url('/fonts/cmu_tt_oblique.ttf') format('truetype')
-
-@font-face
-  font:
-    family: 'CMU Typewriter Text'
-    weight: bold
-    style: italic
-  src: url('/fonts/cmu_tt_bold_oblique.eot')
-  src: url('/fonts/cmu_tt_bold_oblique.woff') format('woff'), url('/fonts/cmu_tt_bold_oblique.ttf') format('truetype')
-
-/* Pygments Highlight
-   Trac Style http://pygments.org/demo/6719/?style=trac
-
-.highlight
-
-  .hll  
-    background-color: #ffffcc 
-  .c  
-    color: #999988 
-    font-style: italic 
-  .err  
-    color: #a61717
-    background-color: #e3d2d2
-  .k  
-    font-weight: bold 
-  .o  
-    font-weight: bold 
-  .cm  
-    color: #999988
-    font-style: italic  
-  .cp  
-    color: #999999
-    font-weight: bold
-  .c1  
-    color: #999988
-    font-style: italic 
-  .cs  
-    color: #999999
-    font-weight: bold
-    font-style: italic
-  .gd  
-    color: #000000
-    background-color: #ffdddd 
-  .ge  
-    font-style: italic
-  .gr  
-    color: #aa0000
-  .gh  
-    color: #999999
-  .gi  
-    color: #000000
-    background-color: #ddffdd 
-  .go  
-    color: #888888
-  .gp  
-    color: #555555
-  .gs  
-    font-weight: bold 
-  .gu  
-    color: #aaaaaa
-  .gt  
-    color: #aa0000
-  .kc  
-    font-weight: bold 
-  .kd  
-    font-weight: bold 
-  .kn  
-    font-weight: bold 
-  .kp  
-    font-weight: bold 
-  .kr  
-    font-weight: bold 
-  .kt  
-    color: #445588
-    font-weight: bold 
-  .m  
-    color: #009999
-  .s  
-    color: #bb8844
-  .na  
-    color: #008080
-  .nb  
-    color: #999999
-  .nc  
-    color: #445588
-    font-weight: bold 
-  .no  
-    color: #008080  
-  .ni  
-    color: #800080  
-  .ne  
-    color: #990000
-    font-weight: bold  
-  .nf  
-    color: #990000
-    font-weight: bold  
-  .nn  
-    color: #555555  
-  .nt  
-    color: #000080  
-  .nv  
-    color: #008080  
-  .ow  
-    font-weight: bold  
-  .w  
-    color: #bbbbbb  
-  .mf  
-    color: #009999  
-  .mh  
-    color: #009999  
-  .mi  
-    color: #009999  
-  .mo  
-    color: #009999  
-  .sb  
-    color: #bb8844  
-  .sc  
-    color: #bb8844  
-  .sd  
-    color: #bb8844  
-  .s2  
-    color: #bb8844  
-  .se  
-    color: #bb8844  
-  .sh  
-    color: #bb8844  
-  .si  
-    color: #bb8844  
-  .sx  
-    color: #bb8844  
-  .sr  
-    color: #808000  
-  .s1  
-    color: #bb8844  
-  .ss 
-    color: #bb8844  
-  .bp  
-    color: #999999  
-  .vc  
-    color: #008080  
-  .vg  
-    color: #008080  
-  .vi  
-    color: #008080  
-  .il  
-    color: #009999  
+  fieldset
+    +reset
+    display: inline
+    width: 100%
+    text-align: center

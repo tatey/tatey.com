@@ -3,7 +3,7 @@ layout: post
 title: 220KM Round Trip, Mountains, Dams, Crisp Air and Country Roads
 ---
 
-{% figure src: http://farm4.static.flickr.com/3636/3580385131_39d208ba69.jpg, href: http://www.flickr.com/photos/23054854@N06/sets/72157619034796216/, caption: Scenic stop on Mount Mee %}
+[![Scenic stop on Mount Mee ](http://farm4.static.flickr.com/3636/3580385131_39d208ba69.jpg)](http://www.flickr.com/photos/23054854@N06/sets/72157619034796216/)
 
 It's the first weekend I've had no obligations to uni, friends or family. Couldn't think of a better way to celebrate than a long ride with my old man and his mate. We started on Brisbane's southside and followed the Ipswitch motorway. Our route took us over the Wivenhoe Dam wall, past Somerset, through Kilcoy and over Mount Mee with various stops on the way. It was an epic ride, out for a total of seven hours.
 

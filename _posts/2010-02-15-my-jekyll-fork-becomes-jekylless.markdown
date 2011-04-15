@@ -1,7 +1,6 @@
 ---
 layout: post
 title: My Jekyll Fork Becomes Jekylless
-time: '22:33'
 ---
 
 Formally published as tatey-jekyll, the project has been renamed to Jekylless for two reasons:
