@@ -10,3 +10,7 @@ I have gone to great lengths to replicate LaTeX default formatting on the web. C
 #### Updated 2010-09-24
 
 [Peter pointed out](http://twitter.com/riddle/status/25386100717) you can use the immediate sibling selector to not indent the first paragraph after a heading. I've been doing CSS for years and have never known. Always learning, love it.
+
+#### Updated 2011-04-16
+
+After a few months of using the LaTeX inspired design, I've switched back to my grey and green. You can still get access to this design in [code](https://github.com/tatey/tatey.com/tree/v8) or as a [screenshot](http://www.flickr.com/photos/tatejohnson/5621690866/lightbox/).
