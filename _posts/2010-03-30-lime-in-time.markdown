@@ -9,7 +9,7 @@ The lime you see on tatey.com today is the result of continued evolution from th
 
 ![Applying a filter from Adobe Photoshop in an attempt to create a fun cartoon appearance.](/images/posts/2010-03-30-lime-in-time/early_2005.png)
 
-![Cartoony and 3D with a subtle texture created by the noise filter. Shadow is inconsistent with lighting. Used a combination of circles&comma; gradients and the free transform tool to create a 3D appearance.](/images/posts/2010-03-30-lime-in-time/late_2005.png)
+![Cartoony and 3D with a subtle texture created by the noise filter. Shadow is inconsistent with lighting. Used a combination of circles, gradients and the free transform tool to create a 3D appearance.](/images/posts/2010-03-30-lime-in-time/late_2005.png)
 
 ![Removed texture and decreased prominence of the shadow in pursuit of a simpler appearance.](/images/posts/2010-03-30-lime-in-time/late_2008.png)
 

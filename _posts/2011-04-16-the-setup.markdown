@@ -1,0 +1,34 @@
+---
+layout: post
+title: The Setup
+---
+
+My workstation and desk at home.
+
+[![Workstation and desk ](http://farm6.static.flickr.com/5308/5604528053_b4350764af_d.jpg)](http://www.flickr.com/photos/tatejohnson/5604528053/in/set-72157623446355659/lightbox/)
+
+### Hardware
+
+The [15" MacBook Pro](http://www.apple.com/macbookpro/) is my choice of computer for its power and portability. Although a majority of my time spent on the computer is at a desk, the flexibility to move between work, meetings and home is critical. It features a 2.66GHz Core i7, 8GB RAM and a 240GB SSD. 
+
+At home and work I plug into a [27" LED Cinema Display](http://www.apple.com/displays/). The resolution, sharpness and colours from this display are the best I've ever seen. Having a large display enhances my workflow by being able to fit my terminal, text editor and web browser side-by-side.
+
+All my input devices are wireless. I prefer wireless for minimising clutter. I have a [Wireless Keyboard](http://www.apple.com/keyboard/) and [Magic Mouse](http://www.apple.com/magicmouse/). Touch based scrolling feels great and never needs cleaning. My [Apple Battery Charger](http://www.apple.com/battery-charger/) means I never need to need to worry about running out of batteries. 
+
+### Software
+
+I switched to [Mac OS X](http://www.apple.com/macosx/) in 2007 after using [various](http://www.gentoo.org/) [flavours](http://www.ubuntu.com/) of [Linux](http://www.archlinux.org/) for a couple of years. I really like the healthy amount of excellent open source and propriety software living side-by-side on the Mac.
+
+Whether I am writing a blog post, writing code or administrating a server I'll have at least one [Terminal](http://www.apple.com/macosx/what-is-macosx/apps-and-utilities.html#terminal) window open. I use [Git](http://git-scm.com/) for versioning control and a fork of [GitX](https://github.com/brotherbard/gitx) as a commit browser. Package management is delegated to [Homebrew](http://mxcl.github.com/homebrew/). Homebrew's simplicity and visibility on GitHub is its greatest attraction over alternative package managers.
+
+Development happens primarily in [TextMate](http://macromates.com/). I say primarily because I use TextMate for everything except Cocoa/Objective-C. I'm aware of everyone's desire to migrate to an editor that's more actively developed, but I'm content with TextMate. Even after all these years, it has a diverse plugin ecosystem that continues to thrive. For Cocoa/Objective-C development I use none other than [Xcode](http://developer.apple.com/tools/xcode/). I browse MySQL databases with [Sequel Pro](http://www.sequelpro.com/) and SQLite databases with [Base](http://menial.co.uk/software/base/). [HTTP Client](http://ditchnet.org/httpclient/) is a nice, native alternative to curl and [HTTP Scoop](http://www.tuffcode.com/) is immensely useful for sniffing HTTP requests.
+
+After years of using Firefox and a short stint with Safari, I've settled on [Chrome](http://www.google.com/chrome) as my primary web browser. For me, Chrome represents what Firefox originally represented. Minimal, fast, innovative and continually updated. Webkit Inspector is mature enough that I no longer crawl back to Firebug for debugging. I tweet with [Echofon for Mac](http://www.echofon.com/twitter/mac), instant message with [Adium](http://adium.im/) and chat with [Colloquy](http://colloquy.info/). 
+
+[1Password](http://agilewebsolutions.com/onepassword) has had the biggest impact on my workflow in the last six months. I have accounts on numerous websites and services as well as passwords for dozens of servers and systems at work. Not having to remember all these passwords in combination with browser integration means I can save my memory for things that matter.
+
+I do all my note taking with [Notational Velocity](http://notational.net/). It's fast, plain text and searchable. Brainstorming, diagrams and iOS UI mocks are best done in [OmniGraffle](http://www.omnigroup.com/products/omnigraffle/). [Alfred](http://www.alfredapp.com/) is an alternative to Spotlight that lets you switch tracks in iTunes by typing the name of the track or artist. [ScreenFlow](http://www.telestream.net/screen-flow/overview.htm) is great for recording screencasts. At the end of an iteration at work, we present a demo to the business and record it as a screencast which we share with our colleagues in other cities. [VMWare Fusion](http://www.vmware.com/products/fusion/overview.html) lets me keep Windows for IE testing and to try out new flavours of Linux every now and then. I still design, mock and touch up in [Photoshop CS5](http://www.adobe.com/products/photoshop.html?promoid=DTELR) and use [Cloud App](http://www.getcloudapp.com/) for quickly sharing images. 
+
+### Dream Setup
+
+Lugging around a 15" laptop is tolerable, but would benefit immensely from a smaller laptop. At the time I bought the this Macbook Pro the Core i7 processors were not available in the 13" model. Ideally, I'd like something like the Macbook Air with more RAM and a faster processor. Couldn't care less about the [optical drive](https://twitter.com/tatejohnson/status/30519424754647041) or ethernet. I already have a large display at home and work so portability is more valuable to me.
