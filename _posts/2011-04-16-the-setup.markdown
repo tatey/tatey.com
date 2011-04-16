@@ -3,9 +3,11 @@ layout: post
 title: The Setup
 ---
 
-My workstation and desk at home.
+Inspired by [The Setup](http://usesthis.com/), I thought I'd share mine.
 
 [![Workstation and desk ](http://farm6.static.flickr.com/5308/5604528053_b4350764af_d.jpg)](http://www.flickr.com/photos/tatejohnson/5604528053/in/set-72157623446355659/lightbox/)
+
+My setup at home.
 
 ### Hardware
 

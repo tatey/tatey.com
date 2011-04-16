@@ -9,7 +9,8 @@ title: Tate Johnson
   {{ site.posts.first.content }}
 </article>
 <hr>
-<ol id="posts">
+<h2>Archive</h2>
+<ol id="archive">
   {% for post in site.posts offset:1 %}
     <li>
       <time datetime="{{ post.date | xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
