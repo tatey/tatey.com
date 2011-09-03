@@ -6,3 +6,4 @@ redcarpet:
 permalink: pretty
 pygments: true
 safe: false
+host: tatey.com
