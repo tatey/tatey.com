@@ -16,7 +16,7 @@ GEM
       liquid (>= 1.9.0)
       maruku (>= 0.5.9)
     kramdown (0.13.3)
-    liquid (2.3.0)
+    liquid (2.2.2)
     maruku (0.6.0)
       syntax (>= 1.0.0)
     posix-spawn (0.3.6)
@@ -30,5 +30,6 @@ PLATFORMS
 DEPENDENCIES
   growl
   jekyll
+  liquid (= 2.2.2)
   redcarpet
   sass
