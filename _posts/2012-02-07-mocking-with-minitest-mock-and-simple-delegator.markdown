@@ -5,7 +5,7 @@ title: Mocking with MiniTest::Mock and SimpleDelegator
 
 Libraries like [Mocha](http://mocha.rubyforge.org/) let you temporarily change the behaviour of objects. This is especially useful when mocking models in rails functional tests. Many of the built-in helper methods introspect models to generate URLs. The same behaviour can be achieved with [MiniTest::Mock](http://www.ruby-doc.org/stdlib-1.9.3/libdoc/minitest/mock/rdoc/MiniTest/Mock.html) and [SimpleDelegator](http://www.ruby-doc.org/stdlib-1.9.3/libdoc/delegate/rdoc/SimpleDelegator.html). Both classes are included in the standard library, it's fast and there's no monkey patching.
 
-MiniTest::Mock is a factory for creating light weight objects. Behaviour is controlled by defining expectations. The first argument is the method's name and the second argument is the return value. There's an optional third argument for specifying the type of arguments that method takes. 
+MiniTest::Mock is a factory for creating light weight objects. Behaviour is controlled by defining expectations. The first argument is the method's name and the second argument is the return value. There's an optional third argument for specifying the type of arguments that method takes.
 
 {% highlight ruby %}
 order = MiniTest::Mock.new
@@ -41,8 +41,10 @@ The real power of MiniTest::Mock and SimpleDelegator is realised when the two ar
 {% highlight ruby %}
 # Mocha
 test "POST create" do
+  mock_items = mock()
+  mock_items.expects(:create).with(Hash).returns(Item.new)
   mock_order = Order.new
-  mock_order.expects(:items).returns(Item.new)
+  mock_order.expects(:items).returns(mock_items)
   controller.order = mock_order
   post :create, :format => 'json'
   # ...
@@ -66,6 +68,10 @@ MiniTest::Mock and SimpleDelegator are more verbose than Mocha but I like that i
 
 {% highlight text %}
                   user       system     total      real
-mocha:            0.000000   0.000000   0.000000   (0.000226)
-simple_delegator: 0.000000   0.000000   0.000000   (0.000016)
+mocha:            0.000000   0.000000   0.000000   (0.000277)
+simple_delegator: 0.000000   0.000000   0.000000   (0.000024)
 {% endhighlight %}
+
+#### Updated 2012-02-21
+
+[SimpleMock](https://github.com/tatey/simple_mock) takes the idea of this blog post and turns it into a fast, tiny library. The API is is 100% compatible with MiniTest::Mock and it plays nicely with MiniTest and RSpec. SimpleMock depends only on the standard library in Ruby 1.9.2 or greater. Instead of writing your own helpers, consider using SimpleMock. You'll keep tests fast and write less code.
