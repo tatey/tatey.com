@@ -104,4 +104,4 @@ Jay Williams followed this guide and experienced an annoying problem with the Gi
 
 #### Updated 2009-10-29 
 
-I no longer recommend using this configuration for deployment. See [simpler deployment for Jekyll using a Rakefile and rsync](/2009/10/29/simpler-deployment-for-jekyll-using-a-rakefile-and-rsync.html).
+I no longer recommend using this configuration for deployment. See [simpler deployment for Jekyll using a Rakefile and rsync](/2009/10/29/simpler-deployment-for-jekyll-using-a-rakefile-and-rsync/).
