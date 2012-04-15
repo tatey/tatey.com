@@ -11,6 +11,8 @@ $ bundle
 $ rake
 ```
 
+Please remove the tracking code at lines 21-43 in _layouts/default.html before publishing to prevent skewing my statistics.
+
 ## Licence and copyright
 
 Following files, directories and their contents are copyright Tate Johnson. You may not reuse anything therein without my permission:
