@@ -13,7 +13,7 @@ $text2: darken($text1, 30%)
 // Mixins
 
 = respond-to($media)
-  @if $media == mobile-portrait
+  @if $media == mobile-landscape
     @media only screen and (max-width: 480px)
       @content
   @else if $media == tablet-portrait
@@ -82,7 +82,7 @@ body
   max-width: 90%
   margin: 2em auto
   font-size: 1.1em
-  +respond-to(mobile-portrait)
+  +respond-to(mobile-landscape)
     font-size: 1em
 
 h1
@@ -95,7 +95,7 @@ h1
   font:
     size: 5.5em
     weight: normal
-  +respond-to(mobile-portrait)
+  +respond-to(mobile-landscape)
     background: none
     font:
       size: 3.75em
@@ -137,7 +137,7 @@ nav > ul
   width: 28em
   background: $fill1
   text-align: center
-  +respond-to(mobile-portrait)
+  +respond-to(mobile-landscape)
     position: static
     margin-top: 1em
     width: auto
@@ -159,7 +159,7 @@ nav > ul
         transform: uppercase
         decoration: none
       color: $text1
-      +respond-to(mobile-portrait)
+      +respond-to(mobile-landscape)
         padding: 0.5em
         font-size: 1.1em
 
@@ -185,7 +185,7 @@ article
     text-transform: uppercase
     color: $text2
     +sans-serif
-    +respond-to(mobile-portrait)
+    +respond-to(mobile-landscape)
       margin:
         top: 1.3em
 
@@ -205,12 +205,12 @@ h2, h3
 
 h2
   font-size: 2em
-  +respond-to(mobile-portrait)
+  +respond-to(mobile-landscape)
     font-size: 1.5em
 
 h3
   font-size: 1.5em
-  +respond-to(mobile-portrait)
+  +respond-to(mobile-landscape)
     font-size: 1.25em
 
   span
@@ -230,7 +230,7 @@ h4
 img
   display: block
   margin: 0 auto
-  +respond-to(mobile-portrait)
+  +respond-to(mobile-landscape)
     max-width: 285px
 
 p
@@ -330,13 +330,13 @@ div#paginator
   position: relative
   +link
   +clearfix
-  +respond-to(mobile-portrait)
+  +respond-to(mobile-landscape)
     height: 3.5em
 
   a
     position: absolute
     top: 0
-    +respond-to(mobile-portrait)
+    +respond-to(mobile-landscape)
       top: auto
       bottom: 0
 
@@ -353,5 +353,5 @@ div#paginator
     text-align: center
 
     input[type=search]
-      +respond-to(mobile-portrait)
+      +respond-to(mobile-landscape)
         width: 225px
