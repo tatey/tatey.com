@@ -12,6 +12,11 @@ $text2: darken($text1, 30%)
 
 // Mixins
 
+= respond-to($media)
+  @if $media == mobile-portrait
+    @media only screen and (max-width: 480px)
+      @content
+
 = reset
   margin: 0
   padding: 0
@@ -74,6 +79,8 @@ body
   max-width: 90%
   margin: 2em auto
   font-size: 1.1em
+  +respond-to(mobile-portrait)
+    font-size: 1em
 
 h1
   +reset
@@ -85,6 +92,13 @@ h1
   font:
     size: 5.5em
     weight: normal
+  +respond-to(mobile-portrait)
+    background: none
+    font:
+      size: 3.75em
+    text-align: center
+    margin-top: -0.475em
+    min-height: 0
 
   &:hover
     background-position: right bottom
@@ -117,18 +131,17 @@ nav > ul
   position: absolute
   top: 7.63em
   left: 0
-  +clearfix
+  width: 28em
+  background: $fill1
+  text-align: center
+  +respond-to(mobile-portrait)
+    position: static
+    margin-top: 1em
+    width: auto
 
   li
-    display: block
-    float: left
-    background: $fill1
-
-    &:first-child
-      padding-left: 1.45em
-
-    &:last-child
-      padding-right: 1.45em
+    +reset
+    display: inline-block
 
     a
       +reset
@@ -141,6 +154,9 @@ nav > ul
         transform: uppercase
         decoration: none
       color: $text1
+      +respond-to(mobile-portrait)
+        padding: 0.5em
+        font-size: 1.1em
 
 footer > p
   +sans-serif
@@ -164,6 +180,9 @@ article
     text-transform: uppercase
     color: $text2
     +sans-serif
+    +respond-to(mobile-portrait)
+      margin:
+        top: 1.3em
 
   h2
     margin-top: 0
@@ -181,9 +200,13 @@ h2, h3
 
 h2
   font-size: 2em
+  +respond-to(mobile-portrait)
+    font-size: 1.5em
 
 h3
   font-size: 1.5em
+  +respond-to(mobile-portrait)
+    font-size: 1.25em
 
   span
     display: block
@@ -290,12 +313,11 @@ ol#archive
     time
       float: left
       display: block
-      width: 6em
+      width: 4.5em
 
     p
       +reset
-      float: right
-      width: 37em
+      margin-left: 5em
 
 div#paginator
   position: relative
