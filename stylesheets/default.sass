@@ -16,6 +16,9 @@ $text2: darken($text1, 30%)
   @if $media == mobile-portrait
     @media only screen and (max-width: 480px)
       @content
+  @else if $media == tablet-portrait
+    @media only screen and (max-width: 768px)
+      @content
 
 = reset
   margin: 0
@@ -138,6 +141,8 @@ nav > ul
     position: static
     margin-top: 1em
     width: auto
+  +respond-to(tablet-portrait)
+    width: 26em
 
   li
     +reset
