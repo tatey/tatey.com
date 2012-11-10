@@ -325,10 +325,15 @@ div#paginator
   position: relative
   +link
   +clearfix
+  +respond-to(mobile-portrait)
+    height: 3.5em
 
   a
     position: absolute
     top: 0
+    +respond-to(mobile-portrait)
+      top: auto
+      bottom: 0
 
     &#left
       left: 0
@@ -341,3 +346,7 @@ div#paginator
     display: inline
     width: 100%
     text-align: center
+
+    input[type=search]
+      +respond-to(mobile-portrait)
+        width: 225px
