@@ -14,10 +14,10 @@ $text2: darken($text1, 30%)
 
 = respond-to($media)
   @if $media == mobile-landscape
-    @media only screen and (max-width: 480px)
+    @media only screen and (max-width: 568px)
       @content
   @else if $media == tablet-portrait
-    @media only screen and (min-width: 481px) and (max-width: 768px)
+    @media only screen and (min-width: 589px) and (max-width: 768px)
       @content
 
 = reset
