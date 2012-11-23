@@ -23,6 +23,9 @@ RewriteCond %{REQUEST_FILENAME} -d
 RewriteCond %{REQUEST_FILENAME} !/$
 RewriteRule ^(.*)$ http://tatey.com/$1/ [R=301,L]
 
+# Redirect mistakes
+RedirectMatch 301 /2012/02/23/testing-private-and-protected-methods-in-rails-controllers-without-being-awkward.*$ http://tatey.com/2012/11/23/testing-private-and-protected-methods-in-rails-controllers-without-being-awkward/
+
 # Compress static assets
 SetOutputFilter DEFLATE
 AddOutputFilterByType DEFLATE text/html application/xml text/css text/javascript 
