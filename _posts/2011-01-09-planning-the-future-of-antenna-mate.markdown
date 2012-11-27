@@ -15,3 +15,19 @@ Having read feature requests from users over and over, similarities begin to eme
 1. **Change current location to an arbitrary location**. You search for a location by city, town or suburb and Antenna Mate finds the strongest broadcasting site. This feature will depend on an internet connection for establishing the latitude and longitude of the desired location. In addition, it enables users to get around the 150 km limit. 
 1. **Universal app**. When you release an app on the App Store, Apple lists the devices the app is compatible with based on features the developer specifies as dependencies. Turns out the iPad Wifi+3G has a digital compass. Custom graphics and views will need to be created. 
 1. **Availability in foreign markets**. The US and UK have a huge caraveners and motorhome demographic who could benefit from Antenna Mate. Moreover, Antenna Mate makes minimal use of the english language, preferring recognisable symbols. Such a design is the perfect candidate for internationalisation opening the possibility of entry into the European market. The biggest barrier to entry is legally attaining transmitter data and collaborating with local testers. Australian's are fortunate that the [ACMA provides this data](http://www.acma.gov.au/WEB/STANDARD/pc=PC_9150) under a Creative Commons licence. 
+
+#### Updated 2012-11-27
+
+Over one year later the search radius was increased to 150km, the default site was changed from the closest to the strongest and became a universal app.
+
+#### Updated 2012-11-27
+
+A spectrum analyser will not be added. The app is successful because it has great defaults. You typically use a spectrum analyser to find the best signal and I am doing that already by estimating the maximum theoretical field strength.
+
+#### Updated 2012-11-27
+
+Changing the current location to an arbitrary location will not be added. The entire user interface is built around where you are now and plotting a bearing to that transmitter. Changing your location invalidates the user interface.
+
+#### Updated 2012-11-27
+
+Availability in foreign markets is still something on my to do list. I haven't been able to find a good source of data in the UK and in the US it appears that people are interested in multiple broadcasting sites at completely different directions. The current user interface assumes only a single broadcasting site.
