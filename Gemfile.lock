@@ -26,7 +26,7 @@ GEM
       syntax (>= 1.0.0)
     pygments.rb (0.2.13)
       rubypython (~> 0.5.3)
-    rake (10.0.2)
+    rake (10.0.3)
     rubypython (0.5.3)
       blankslate (>= 2.1.2.3)
       ffi (~> 1.0.7)
