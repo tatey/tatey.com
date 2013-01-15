@@ -88,7 +88,7 @@ Next, we want the input and remove anchor elements repeated for each poll JavaSc
 </div>
 {% endhighlight %}
 
-Using `fields_for` we instantiate a poll Ruby object to give us access to the nested form builder. We want AngularJS to manage the indexes for us, so instead of specifying an explicit index, we're going to set the index of the input element to a special variable available within the scope of repeating elements. As a side-effect of using `child_index`, it is necessary to specify the ID of the input element to avoid ID collisions in the DOM. If you don't care, then you could safely omit the ID *(Thanks to [Darcy Laycock](https://twitter.com/Sutto/status/290318902750216192) for the suggestiong to use `child_index`)*.
+Using `fields_for` we instantiate a poll Ruby object to give us access to the nested form builder. We want AngularJS to manage the indexes for us, so instead of specifying an explicit index, we're going to set the index of the input element to a special variable available within the scope of repeating elements. As a side-effect of using `child_index`, it is necessary to specify the ID of the input element to avoid ID collisions in the DOM. If you don't care, then you could safely omit the ID *(Thanks to [Darcy Laycock](https://twitter.com/Sutto/status/290318902750216192) for the suggestion to use `child_index`)*.
 
 {% highlight erb %}
 {% raw %}
@@ -133,4 +133,4 @@ The index came from the special index variable available inside the scope of rep
 
 ### Rails Nested Forms
 
-Some people might be suprised at my use of nested forms. Nested forms can suck, and when they do its time to consider something else like an [intermediary view object](http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/). But until you reach that point, nested forms are the quickest way to ship.
+Some people might be surprised at my use of nested forms. Nested forms can suck, and when they do its time to consider something else like an [intermediary view object](http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/). But until you reach that point, nested forms are the quickest way to ship.
