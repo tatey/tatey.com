@@ -12,3 +12,7 @@ How well is not well? About 1-3 sales per day. [Antenna Mate](http://antennamate
 Since building Next Stop I've strived to keep focus on the core problem and shipping as early as possible. At the end of the day, you can only commit a finite number of hours to a project and you've got to make that project count for something.
 
 What I've always wanted is an app I could tell where I'm going and it figures out the route and tells me where to get off. That's what [TripGo](http://skedgo.com) does. There's some good people behind it and I wish them all the best. Now I feel free to focus.
+
+I'm finishing this post off with an experimental design I was contemplating for Next Stop. It was intentionally high contrast to increase visibility for people with vision impairments.
+
+[![](http://farm9.staticflickr.com/8532/8627276780_157262c3af_o.png)](http://www.flickr.com/photos/tatejohnson/8627276780/)
