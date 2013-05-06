@@ -13,14 +13,14 @@ end
 
 task :default => :server
  
-desc 'Build site with Jekyll'
+desc 'Build'
 task :build do
   jekyll
 end
  
-desc 'Build and start server with --auto'
+desc 'Start server and watch for changes'
 task :server do
-  jekyll '--server --auto'
+  jekyll 'server --host localhost --watch'
 end
 
 desc 'Build and deploy'
