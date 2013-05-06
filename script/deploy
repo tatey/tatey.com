@@ -1,0 +1,4 @@
+#!/bin/sh
+
+bundle exec jekyll build
+rsync -rtzh --progress --delete _site/ tatey@tatey.com:~/var/www/tatey.com/

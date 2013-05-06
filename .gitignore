@@ -1,2 +1,4 @@
 .DS_Store
+.bundle/
 _site/
+vendor/
