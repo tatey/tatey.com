@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name=viewport content="width=device-width,initial-scale=1.0">
     <title>{{ page.title }}</title>
-    <link href="/stylesheets/default.css?20121110" rel="stylesheet" type="text/css">
-    <link href="/stylesheets/highlight.css?20121110" rel="stylesheet" type="text/css">
+    {% stylesheet default %}
+    {% stylesheet highlight %}
     <link href="http://feeds2.feedburner.com/tatejohnson" rel="alternate" title="Tate Johnson" type="application/atom+xml">
-    <link href='/images/favicon.ico' rel='shortcut icon' type='image/ico'>
+    <link href='{% asset_path favicon.ico %}' rel='shortcut icon' type='image/ico'>
   </head>
   <body>
     <h1><a href="{{ base.url }}/">tatey<span>.</span>com</a></h1>

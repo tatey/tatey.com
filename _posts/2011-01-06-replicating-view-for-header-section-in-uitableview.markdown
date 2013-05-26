@@ -3,7 +3,8 @@ layout: post
 title: Replicating View for Header Section in UITableView
 ---
 
-[![Screenshot](/images/posts/2011-01-06-replicating-view-for-header-section-in-uitableview/customtableview_s.png)](/images/posts/2011-01-06-replicating-view-for-header-section-in-uitableview/customtableview.png)
+<a href="{% asset_path posts/2011-01-06-replicating-view-for-header-section-in-uitableview/customtableview.png %}">
+<img title="Screenshot" src="{% asset_path posts/2011-01-06-replicating-view-for-header-section-in-uitableview/customtableview_s.png %}"/></a>
 
 When building [Antenna Mate](http://antennamate.com), I wanted to use a UITableView with the grouped style that preserved the appearance of labels in the header. While Apple makes it easy to change the background, I could find no mechanism for changing label properties for the header view in the same way. You need to create a custom header view and replicate the default label. After much tweaking, here is how to do it.
 

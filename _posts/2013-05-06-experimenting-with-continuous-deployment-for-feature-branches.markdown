@@ -7,7 +7,7 @@ At work we've been [experimenting with a tool](https://twitter.com/tatejohnson/s
 
 Internally the tool is known as Tug and it deploys straight from GitHub to Heroku. Tug announces when the deploy has finished in Campfire along with the URL. There's also a dashboard for quickly seeing which branches have been deployed and their URLs. You can also get a log of the output captured from the API and command line to troubleshoot any problems. To date, we've had 10 failed deploys out of 460.
 
-[![]({{base.url}}/images/posts/2013-05-06-experimenting-with-continuous-deployment-for-feature-branches/tug_thumb.png)]({{base.url}}/images/posts/2013-05-06-experimenting-with-continuous-deployment-for-feature-branches/tug.png)
+[![]({% asset_path posts/2013-05-06-experimenting-with-continuous-deployment-for-feature-branches/tug_thumb.png %})]({% asset_path posts/2013-05-06-experimenting-with-continuous-deployment-for-feature-branches/tug.png %})
 
 Tug works well for us because we use feature branches heavily for development. We're a small team, but it's not uncommon to have 2 or 3 concurrent branches. The last thing we want to be thinking about is how are we going to get some early feedback from other people in the company. Even as a developer, it's nice to be able to look at a pull request and then go and try the code out without having to mess around with my local repository.
 
