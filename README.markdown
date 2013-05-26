@@ -20,6 +20,14 @@ Serve.
 
 Please **remove the tracking code at lines 21-43 in _layouts/default.html** before publishing to prevent skewing my statistics.
 
+## Deploy
+
+Configure _jekyll_s3.yml. See [jekyll-s3 for more information](https://github.com/laurilehmijoki/jekyll-s3).
+
+Deploy
+
+    $ _script/deploy
+
 ## Licence and copyright
 
 Following files, directories and their contents are copyright Tate Johnson. You may not reuse anything therein without my permission:
