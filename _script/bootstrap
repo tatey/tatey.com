@@ -10,6 +10,10 @@ rm -rf _vendor/gems
 mkdir .bundle
 mkdir -p _vendor/gems
 
+if [ ! -f _jekyll_s3.yml ]; then
+  cp _jekyll_s3.example.yml _jekyll_s3.yml
+fi
+
 echo "---
 BUNDLE_BIN: false
 BUNDLE_DISABLE_SHARED_GEMS: "1"

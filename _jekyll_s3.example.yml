@@ -1,0 +1,10 @@
+s3_id: EXAMPLE_ID
+s3_secret: EXAMPLE_SECRET
+s3_bucket: EXAMPLE_BUCKET
+s3_reduced_redundancy: true
+
+gzip: true
+
+max_age:
+  "assets/*": 31536000 # 1 year
+  "*": 120             # 2 minutes

@@ -1,13 +1,23 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    aws-sdk (1.8.5)
+      json (~> 1.4)
+      nokogiri (>= 1.4.4)
+      uuidtools (~> 2.1)
     classifier (1.3.3)
       fast-stemmer (>= 1.0.0)
     colorator (0.1)
+    colored (1.2)
     commander (4.1.3)
       highline (~> 1.6.11)
+    configure-s3-website (1.4.0)
+      deep_merge (= 1.0.0)
+    deep_merge (1.0.0)
     directory_watcher (1.4.1)
+    erubis (2.7.0)
     fast-stemmer (1.0.2)
+    filey-diff (1.1.0)
     highline (1.6.19)
     hike (1.2.2)
     jekyll (1.0.2)
@@ -23,11 +33,21 @@ GEM
     jekyll-assets (0.5.3)
       jekyll (~> 1.0)
       sprockets (~> 2.9)
+    jekyll-s3 (2.7.0)
+      aws-sdk (~> 1.8.5)
+      configure-s3-website (~> 1)
+      erubis (~> 2.7.0)
+      filey-diff (~> 1)
+      mime-types (= 1.19)
+      simple-cloudfront-invalidator (~> 1)
+    json (1.8.0)
     kramdown (1.0.2)
     liquid (2.5.0)
     maruku (0.6.1)
       syntax (>= 1.0.0)
+    mime-types (1.19)
     multi_json (1.7.3)
+    nokogiri (1.5.9)
     posix-spawn (0.3.6)
     pygments.rb (0.5.0)
       posix-spawn (~> 0.3.6)
@@ -36,6 +56,8 @@ GEM
     rake (10.0.4)
     safe_yaml (0.7.1)
     sass (3.2.3)
+    simple-cloudfront-invalidator (1.0.0)
+      colored (= 1.2)
     sprockets (2.10.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -43,6 +65,7 @@ GEM
       tilt (~> 1.1, != 1.3.0)
     syntax (1.0.0)
     tilt (1.4.1)
+    uuidtools (2.1.4)
     yajl-ruby (1.1.0)
 
 PLATFORMS
@@ -51,5 +74,6 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   jekyll-assets
+  jekyll-s3
   rake
   sass
