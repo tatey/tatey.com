@@ -25,7 +25,7 @@ LESS is an extension to CSS which adds variables, nesting and mixins. Unlike [Sa
 
 ### Growl notifications
 
-![Growl notifications with Jekyll build statuses](/images/posts/2009-12-05-forking-jekyll-now-with-less-and-growl-notifications/growl.jpg)
+![Growl notifications with Jekyll build statuses]({% asset_path posts/2009-12-05-forking-jekyll-now-with-less-and-growl-notifications/growl.jpg %})
 
 Stop killing your browser's reload button and let Jekyll notify you when the build is complete.
 

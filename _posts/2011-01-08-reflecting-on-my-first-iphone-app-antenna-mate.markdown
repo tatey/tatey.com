@@ -5,7 +5,7 @@ title: Reflecting on my First iPhone App&#58; Antenna Mate
 
 Now that [Antenna Mate](http://antennamate.com) is available on the [App Store](http://itunes.apple.com/au/app/antenna-mate/id411272547?mt=8), I'd like to reflect on my experience developing an iPhone application from the perspective of a Ruby on Rails developer.
 
-[![Antenna Mate iPhone 4](/images/posts/2011-01-08-reflecting-on-my-first-iphone-app-antenna-mate/antennamateiphone.jpg)](http://antennamate.com)
+[![Antenna Mate iPhone 4]({% asset_path posts/2011-01-08-reflecting-on-my-first-iphone-app-antenna-mate/antennamateiphone.jpg %})](http://antennamate.com)
 
 Antenna Mate was designed and developed over three months in-between finishing uni, socialising and starting full-time work. I was introduced to Objective-C/GNUStep at uni in [2501ICT](http://www3.griffith.edu.au/03/STIP4/app?page=CourseEntry&service=external&sp=S2501ICT). It provided me with the foundation of compilation, pointers, syntax, memory management and the standard library. 
 
