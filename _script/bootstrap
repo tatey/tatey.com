@@ -6,12 +6,14 @@
 # to `bundle` that people might make.
 
 rm -rf .bundle
+rm -rf _vendor/gems
 mkdir .bundle
+mkdir -p _vendor/gems
 
 echo "---
 BUNDLE_BIN: false
 BUNDLE_DISABLE_SHARED_GEMS: "1"
-BUNDLE_PATH: vendor/gems
+BUNDLE_PATH: _vendor/gems
 " > .bundle/config
 
 bundle check > /dev/null 2>&1 || bundle install "$@"

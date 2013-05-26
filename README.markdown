@@ -8,7 +8,7 @@ Clone the repository and bootstrap.
 
     $ git clone git://github.com/tatey/tatey.com.git
     $ cd tatey.com
-    $ script/bootstrap
+    $ _script/bootstrap
 
 Install pygments for code highlighting.
 
@@ -16,7 +16,7 @@ Install pygments for code highlighting.
 
 Serve.
 
-    $ script/serve
+    $ _script/serve
 
 Please **remove the tracking code at lines 21-43 in _layouts/default.html** before publishing to prevent skewing my statistics.
 
