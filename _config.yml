@@ -1,5 +1,5 @@
 ---
-exclude: ['.bundle', 'Gemfile', 'Gemfile.lock', 'README.markdown']
+exclude: ['Gemfile', 'Gemfile.lock', 'README.markdown']
 permalink: pretty
 pygments: true
 safe: false
