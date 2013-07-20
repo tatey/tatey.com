@@ -1,5 +1,8 @@
 ---
 exclude: ['Gemfile', 'Gemfile.lock', 'README.markdown']
+markdown: 'redcarpet'
+redcarpet:
+  extensions: ['tables']
 permalink: pretty
 pygments: true
 safe: false
