@@ -2,7 +2,7 @@
 exclude: ['Gemfile', 'Gemfile.lock', 'README.markdown']
 markdown: 'redcarpet'
 redcarpet:
-  extensions: ['tables']
+  extensions: ['no_intra_emphasis', 'tables']
 permalink: pretty
 pygments: true
 safe: false
