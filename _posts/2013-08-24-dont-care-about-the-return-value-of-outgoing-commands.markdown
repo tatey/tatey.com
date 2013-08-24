@@ -67,3 +67,7 @@ describe Task::RestartProcesses do
   end
 end
 {% endhighlight %}
+
+#### Updated 2013-08-24
+
+David Chelimsky [showed another approach](https://gist.github.com/dchelimsky/6327095) to setting expectations without caring about the return value using [as_null_object](https://www.relishapp.com/rspec/rspec-mocks/docs/method-stubs/as-null-object). The big advantage of this approach is that it's built into RSpec.
