@@ -1,5 +1,5 @@
 ---
-exclude: ['Gemfile', 'Gemfile.lock', 'README.markdown']
+exclude: ['Gemfile', 'Gemfile.lock', 'README.markdown', 's3_website.yml', 's3_website.example.yml']
 markdown: 'redcarpet'
 redcarpet:
   extensions: ['no_intra_emphasis', 'tables']

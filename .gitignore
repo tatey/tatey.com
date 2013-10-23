@@ -1,4 +1,4 @@
 .bundle/
-_jekyll_s3.yml
 _site/
 _vendor/
+s3_website.yml

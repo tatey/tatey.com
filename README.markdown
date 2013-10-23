@@ -22,11 +22,11 @@ Please **remove the tracking code at lines 21-29 in _layouts/default.html** befo
 
 ## Deploy
 
-Configure _jekyll_s3.yml. See [jekyll-s3 for more information](https://github.com/laurilehmijoki/jekyll-s3).
+Configure s3_website.yml. See [s3_website for more information](https://github.com/laurilehmijoki/s3_website).
 
 Configure bucket.
 
-    $ [bundle exec] configure-s3-website --config-file _jekyll_s3.yml
+    $ [bundle exec] s3_website cfg apply
 
 Deploy.
 

@@ -10,8 +10,8 @@ rm -rf _vendor/gems
 mkdir .bundle
 mkdir -p _vendor/gems
 
-if [ ! -f _jekyll_s3.yml ]; then
-  cp _jekyll_s3.example.yml _jekyll_s3.yml
+if [ ! -f s3_website.yml ]; then
+  cp s3_website.example.yml s3_website.yml
 fi
 
 echo "---
