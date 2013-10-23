@@ -16,3 +16,7 @@ What I'm trying to gauge is whether other developers would find this useful in t
 #### Updated 2013-05-20
 
 [View the slides](https://speakerdeck.com/tatey/experimenting-with-continuous-deployment-for-feature-branches) from my lightning talk which I gave at [Sydney DevOps](http://www.meetup.com/devops-sydney/) on 16th May, 2013.
+
+#### Updated 2013-10-23
+
+[Tug](https://tugapp.com) is available for you to use!
