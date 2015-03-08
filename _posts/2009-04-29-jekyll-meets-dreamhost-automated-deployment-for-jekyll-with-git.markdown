@@ -20,7 +20,7 @@ We are going to create a bare repository for pushing to. Every time you push, we
 
 ### Preparing a Jekyll-friendly environment
 
-Jekyll is not available on DreamHost. You will need to build your own RubyGems and install Jekyll with its dependancies. John Nunemaker has written an excellent [guide](http://railstips.org/2008/11/25/rubygems-yours-mine-and-ours).
+Jekyll is not available on DreamHost. You will need to build your own RubyGems and install Jekyll with its dependancies. John Nunemaker has written an excellent [guide](http://www.railstips.org/blog/archives/2008/11/24/rubygems-yours-mine-and-ours/).
 
 If you are interested in code highlighting, you will also want to install [Pygments](http://pygments.org/). Pygments is a Python syntax highlighter that Jekyll uses to parse and wrap your code snippets in the appropriate HTML tags.
 
