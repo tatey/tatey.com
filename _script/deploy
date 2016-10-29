@@ -1,5 +1,4 @@
 #!/bin/sh
 
-rm -Rf _site/
+bundle exec jekyll clean
 bundle exec jekyll build
-bundle exec s3_website push

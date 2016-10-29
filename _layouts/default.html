@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name=viewport content="width=device-width,initial-scale=1.0">
     <title>{{ page.title }}</title>
-    {% stylesheet default %}
-    <link href="{{ base.url }}/atom.xml" rel="alternate" title="Tate Johnson" type="application/atom+xml">
-    <link href='{% asset_path favicon.ico %}' rel='shortcut icon' type='image/ico'>
+    <link href="{{ site.baseurl }}/stylesheets/default.css" rel="stylesheet" type="text/css">
+    <link href="{{ site.baseurl }}/stylesheets/highlight.css" rel="stylesheet" type="text/css">
+    <link href="{{ site.baseurl }}/favicon.ico" rel="shortcut icon" type="image/ico">
   </head>
   <body>
-    <h1><a href="{{ base.url }}/">tatey<span>.</span>com</a></h1>
+    <h1><a href="{{ site.baseurl }}/">tatey<span>.</span>com</a></h1>
     {{ content }}
     <script type="text/javascript">
       var _gaq = _gaq || [];

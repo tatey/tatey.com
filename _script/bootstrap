@@ -6,18 +6,10 @@
 # to `bundle` that people might make.
 
 rm -rf .bundle
-rm -rf _vendor/gems
 mkdir .bundle
-mkdir -p _vendor/gems
-
-if [ ! -f s3_website.yml ]; then
-  cp s3_website.example.yml s3_website.yml
-fi
 
 echo "---
 BUNDLE_BIN: false
-BUNDLE_DISABLE_SHARED_GEMS: "1"
-BUNDLE_PATH: _vendor/gems
 " > .bundle/config
 
 bundle check > /dev/null 2>&1 || bundle install "$@"

@@ -1,3 +1,3 @@
 #!/bin/sh
 
-bundle exec jekyll serve --host localhost --watch
+bundle exec jekyll serve

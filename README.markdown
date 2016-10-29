@@ -10,10 +10,6 @@ Clone the repository and bootstrap.
     $ cd tatey.com
     $ _script/bootstrap
 
-Install pygments for code highlighting.
-
-    $ [sudo] easy_install pygments
-
 Serve.
 
     $ _script/serve
@@ -22,22 +18,13 @@ Please **remove the tracking code at lines 21-29 in _layouts/default.html** befo
 
 ## Deploy
 
-Configure s3_website.yml. See [s3_website for more information](https://github.com/laurilehmijoki/s3_website).
+FIXME
 
-Configure bucket.
-
-    $ [bundle exec] s3_website cfg apply
-
-Deploy.
-
-    $ _script/deploy
-
-## Licence and copyright
+## Licence and Copyright
 
 Following files, directories and their contents are copyright Tate Johnson. You may not reuse anything therein without my permission:
 
-* _assets/images/
-* _design/
+* images/
 * index.html
 
 Following directories and their contents are licensed under the [Creative Commons Attribution-Noncommercial-No Derivative Works 2.5 Australia](http://creativecommons.org/licenses/by-nc-nd/2.5/au/):
