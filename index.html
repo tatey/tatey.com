@@ -1,23 +1,99 @@
 ---
-layout: default
-title: Tate Johnson
 ---
 
-<h2>About</h2>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width,initial-scale=1.0">
+    <title>Tate Johnson</title>
+    <link href="{{ site.baseurl }}/favicon.ico" rel="shortcut icon" type="image/ico">
+    <style type="text/css">
+      html {
+        background: #222222;
+        color: #ffffff;
+        font-family: "Georgia", "Times New Roman", serif;
+        font-size: 18px;
+        line-height: 30px;
+      }
 
-<p>Tate Johnson is a software engineer at <a href="http://lifx.co">LIFX</a> who has a knack for seeing how everything fits together. Simplicity and defaults are my guiding principles. These days I live in <a href="http://en.wikipedia.org/wiki/Brisbane">Brisbane</a> and commute regularly to <a href="http://en.wikipedia.org/wiki/Melbourne">Melbourne</a>.</p>
+      body {
+        margin: 0 5%;
+      }
 
-<img id="right" src="{{ site.baseurl }}/images/me.jpg" alt="Tate Johnson" />
+      @media only screen and (min-width: 481px) {
+        body {
+          margin: 75px auto;
+          width: 500px;
+        }
+      }
 
-<p>Some of my own software includes:</p>
+      h1 {
+        background: url("{{ site.baseurl }}/lime.png") top left;
+        width: 202px;
+        height: 202px;
+        margin: 0 auto 37px auto;
+        display: block
+      }
 
-<ul>
-  <li><a href="http://antennamate.com">Antenna Mate</a>, an iOS app that takes the guess work out of pointing a TV antenna.</li>
-  <li><a href="http://github.com/tatey/Lighting">Lighting</a>, A Mac OS X widget for toggling LIFX lights on and off.</li>
-  <li><a href="http://maps.antennamate.com">Maps for Antenna Mate</a>, browse TV transmitters over Google Maps from your web browser.</li>
-  <li><a href="http://nextstop.me">Next Stop</a>, an iOS app that alerts you when its time to hop off the bus.</li>
-  <li><a href="http://tugapp.com">Tug</a>, hosted continuous deployment from GitHub to Heroku.</li>
-  <li><a href="https://github.com/tatey">Various open source projects and contributions</a> on GitHub.</li>
-</ul>
+      h1:hover {
+        background-position: bottom left;
+      }
 
-<p>You can reach me via email (<a href="mailto:tate@tatey.com">tate@tatey.com</a>) or Twitter (<a href="http://twitter.com/tatejohnson/">@tatejohnson</a>).</p>
+      h1 > span {
+        display: none;
+      }
+
+      a {
+        color: #ebffb4;
+        text-decoration: underline;
+      }
+
+      a:hover,
+      a:focus,
+      a:active {
+        color: #222222;
+        background: #ebffb4;
+        text-decoration: none;
+      }
+
+      p,
+      ul {
+        margin: 0;
+        margin-bottom: 37px;
+      }
+
+      ul {
+        padding: 0;
+      }
+
+      ul > li {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><span>Tate Johnson</span></h1>
+    <p>Tate Johnson is a software engineer at <a href="http://lifx.co">LIFX</a> who has a knack for seeing how everything fits together. Simplicity and defaults are my guiding principles. These days I live in <a href="http://en.wikipedia.org/wiki/Brisbane">Brisbane</a> and commute regularly to <a href="http://en.wikipedia.org/wiki/Melbourne">Melbourne</a>.</p>
+    <ul>
+      <li><a href="http://antennamate.com">Antenna Mate</a>, an iOS app that takes the guess work out of pointing a TV antenna.</li>
+      <li><a href="http://github.com/tatey/Lighting">Lighting</a>, A Mac OS X widget for toggling LIFX lights on and off.</li>
+      <li><a href="http://maps.antennamate.com">Maps for Antenna Mate</a>, browse TV transmitters over Google Maps from your web browser.</li>
+      <li><a href="http://nextstop.me">Next Stop</a>, an iOS app that alerts you when its time to hop off the bus.</li>
+      <li><a href="http://tugapp.com">Tug</a>, hosted continuous deployment from GitHub to Heroku.</li>
+      <li><a href="https://github.com/tatey">Various open source projects and contributions</a> on GitHub.</li>
+    </ul>
+    <p>You can reach me via email (<a href="mailto:tate@tatey.com">tate@tatey.com</a>) or Twitter (<a href="http://twitter.com/tatejohnson/">@tatejohnson</a>).</p>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-8340632-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        if (window.location.hostname === 'localhost') return;
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
