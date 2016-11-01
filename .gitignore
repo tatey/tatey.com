@@ -1,4 +1,3 @@
 .bundle/
+.envrc
 _site/
-_vendor/
-s3_website.yml
