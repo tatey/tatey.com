@@ -57,7 +57,8 @@
       }
 
       p,
-      ul {
+      ul,
+      .hr{
         margin: 0;
         margin-bottom: 37px;
       }
@@ -69,11 +70,17 @@
       ul > li {
         margin-left: 20px;
       }
+
+      .hr {
+        background: transparent;
+        border-bottom: 1px solid #444444;
+        border-top: 1px solid #111111;
+      }
     </style>
   </head>
   <body>
     <h1><span>Tate Johnson</span></h1>
-    <p>Hi, I'm the CTO at <a href="https://www.fivegoodfriends.com.au">Five.Good.Friends</a>. I practice sustainably delivering polished software. Full-stack web and iOS development are my specialities. Some of my own software includes:
+    <p>Hi, I'm the CTO at <a href="https://www.fivegoodfriends.com.au">Five Good Friends</a>. I practice sustainably delivering polished software. Full-stack web and iOS development are my specialities. Some of my own software includes:
     <ul>
       <li><a href="https://antennamate.com">Antenna Mate</a>, an iOS app that takes the guess work out of pointing a TV antenna.</li>
       <li><a href="https://github.com/tatey/Lighting">Lighting</a>, A macOS today extension for toggling LIFX lights on and off from Notification Center</li>
@@ -83,16 +90,14 @@
     </ul>
     <p>Previously I lead iOS development at <a href="https://lifx.com">LIFX</a> and helped to build the foundations of the LIFX Cloud. Earlier I was key engineer at <a href="https://www.everydayhero.com">Everyday Hero</a>. I hold a Bachelor of Information Technology from <a href="https://www.griffith.edu.au">Griffith University</a>.</p>
     <p>You can reach me at <a href="mailto:tate@tatey.com">tate@tatey.com</a> or <a href="http://twitter.com/tatejohnson/">@tatejohnson</a> on Twitter.</p>
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-8340632-1']);
-      _gaq.push(['_trackPageview']);
-      (function() {
-        if (window.location.hostname === 'localhost') return;
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
+    <div class="hr"></div>
+    <ul>
+      {% for post in site.posts %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    {% include analytics.html %}
   </body>
 </html>
