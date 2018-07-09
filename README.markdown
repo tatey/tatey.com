@@ -14,8 +14,6 @@ Serve:
 
     $ _script/serve
 
-Please **remove the tracking code at lines 21-29 in _layouts/default.html** before publishing to prevent skewing my statistics.
-
 ## Deploy
 
 Install awscli and configure environment variables. Then depoy:
