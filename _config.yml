@@ -1,3 +1,4 @@
 ---
 exclude: ['Gemfile', 'Gemfile.lock', 'README.markdown']
 permalink: pretty
+url: https://tatey.com
