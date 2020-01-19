@@ -1,4 +1,9 @@
 ---
+# Exclude directories and/or files from the conversion. These exclusions are relative to the site's source directory and cannot be outside the source directory.
 exclude: ['Gemfile', 'Gemfile.lock', 'README.markdown']
+
+# /:categories/:year/:month/:day/:title/
 permalink: pretty
+
+# Serve the website from this URL
 url: https://tatey.com

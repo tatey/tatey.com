@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta name=viewport content="width=device-width,initial-scale=1.0">
     <title>Tate Johnson</title>
-    <link rel="alternate" type="application/atom+xml" href="{{ site.url }}/feed.xml">
-    <link href="{{ site.url }}/favicon.ico" rel="shortcut icon" type="image/ico">
+    <link rel="alternate" type="application/atom+xml" href="{{ "/feed.xml" | relative_url }}">
+    <link href="{{ "/favicon.ico" | relative_url }} " rel="shortcut icon" type="image/ico">
     <style type="text/css">
       html {
         background: #222222;
@@ -29,7 +29,7 @@
       }
 
       h1 {
-        background: url("{{ site.baseurl }}/lime.png") top left;
+        background: url("{{ "/lime.png" | relative_url }}") top left;
         width: 202px;
         height: 202px;
         margin: 0 auto 37px auto;
@@ -94,10 +94,10 @@
     <ul>
       {% for post in site.posts %}
         <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
         </li>
       {% endfor %}
     </ul>
-    <p>Subscribe to the <a href="{{ site.url }}/feed.xml">feed</a>.</p>
+    <p>Subscribe to the <a href="{{ "/feed.xml" | relative_url }}">feed</a>.</p>
   </body>
 </html>

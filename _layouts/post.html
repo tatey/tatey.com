@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name=viewport content="width=device-width,initial-scale=1.0">
-    <title>{{ page.title }} &ndash; Tate Johnson</title>
-    <link href="{{ site.baseurl }}/favicon.ico" rel="shortcut icon" type="image/ico">
+    <title>{{ page.title }} by Tate Johnson</title>
+    <link rel="alternate" type="application/atom+xml" href="{{ "/feed.xml" | relative_url }}">
+    <link href="{{ "/favicon.ico" | relative_url }}" rel="shortcut icon" type="image/ico">
     <style type="text/css">
       html {
         background: #ffffff;
@@ -52,6 +53,6 @@
   <body>
     <h1>{{ page.title }}</h1>
     {{ content }}
-    <p id="meta">You are reading the blog of <a href="{{ site.base_url }}/">Tate Johnson</a>.</p>
+    <p id="meta">You are reading the blog of <a href="{{ "/" | relative_url }}">Tate Johnson</a>.</p>
   </body>
 </html>
