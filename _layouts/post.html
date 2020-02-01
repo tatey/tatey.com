@@ -14,6 +14,12 @@
         font-size: 18px;
       }
 
+      @media only screen and (min-width: 481px) {
+        html {
+          font-size: 21px;
+        }
+      }
+
       body {
         margin: 0 5%;
       }
@@ -27,20 +33,52 @@
 
       h1 {
         color: #111111;
-        font-size: 30px;
+        font-size: 27px;
         font-family: "Helvetica Neue", Helvetica, sans-serif;
       }
 
       @media only screen and (min-width: 481px) {
         h1 {
-          font-size: 48px;
+          font-size: 30px;
         }
       }
 
-      p {
+      p,
+      ul {
         margin: 0;
         margin-bottom: 37px;
         line-height: 30px;
+      }
+
+      ul {
+        padding: 0;
+      }
+
+      ul > li {
+        margin-left: 23px;
+      }
+
+      ul > li:not(:last-child) {
+        margin-bottom: 9px;
+      }
+
+      @media only screen and (min-width: 481px) {
+        p,
+        ul {
+          line-height: 32px;
+        }
+      }
+
+      #title {
+        color: #111111;
+        font-size: 36px;
+        font-family: "Helvetica Neue", Helvetica, sans-serif;
+      }
+
+      @media only screen and (min-width: 481px) {
+        #title {
+          font-size: 60px;
+        }
       }
 
       #meta {
@@ -51,7 +89,7 @@
     </style>
   </head>
   <body>
-    <h1>{{ page.title }}</h1>
+    <h1 id="title">{{ page.title }}</h1>
     {{ content }}
     <p id="meta">You are reading the blog of <a href="{{ "/" | relative_url }}">Tate Johnson</a>.</p>
   </body>
