@@ -1,3 +1,4 @@
 .bundle/
 .envrc
+.jekyll-cache/
 _site/
