@@ -22,4 +22,4 @@ Install awscli and configure environment variables. Then depoy:
 
 ## Copyright
 
-Copyright 2009–2020 © Tate Johnson. All rights reserved.
+Copyright 2009–2021 © Tate Johnson. All rights reserved.
