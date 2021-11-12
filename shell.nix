@@ -8,7 +8,7 @@ nixpkgs.mkShell {
   buildInputs = [
     nixpkgs.aws
     nixpkgs.direnv
-    nixpkgs.ruby
+    nixpkgs.ruby_3_0
   ];
   shellHook = ''
     eval "$(direnv hook $SHELL)"
