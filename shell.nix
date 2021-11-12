@@ -6,7 +6,7 @@ let
 in
 nixpkgs.mkShell {
   buildInputs = [
-    nixpkgs.aws
+    nixpkgs.awscli2
     nixpkgs.direnv
     nixpkgs.ruby_3_0
   ];
