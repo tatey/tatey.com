@@ -11,7 +11,7 @@
     <meta name="twitter:image" content="{{ "/avatar.png" | absolute_url }}">
     <meta name="og:type" content="article">
     <meta name="og:url" content="{{ page.url | absolute_url }}">
-    <meta name="og:title" content="{{ page.title }}">
+    <meta name="og:title" content="{{ page.title | smartify }}">
     <meta name="og:description" content="{{ content | strip_html | truncatewords:30 }}">
     <meta name="og:image" content="{{ "/avatar.png" | absolute_url }}">
     <style type="text/css">
@@ -102,7 +102,7 @@
     </style>
   </head>
   <body>
-    <h1 id="title">{{ page.title }}</h1>
+    <h1 id="title">{{ page.title | smartify }}</h1>
     {{ content }}
     <p id="meta">Written by <a href="{{ "/" | relative_url }}">Tate Johnson</a> on {{ page.date | date: "%e %b %Y" }}. Subscribe to my blog's <a href="{{ "/feed.xml" | relative_url }}">RSS feed</a>.</p>
   </body>
