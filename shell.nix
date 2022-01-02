@@ -1,7 +1,7 @@
 let
   nixpkgs =
     import (builtins.fetchTarball {
-      url = https://github.com/NixOS/nixpkgs/archive/f096b7122ab08e93c8b052c92461ca71b80c0cc8.tar.gz;
+      url = https://github.com/NixOS/nixpkgs/archive/7f58f36cd5bdc99f36ddaae320c49b5a6340ce43.tar.gz;
     }) { };
 in
 nixpkgs.mkShell {
