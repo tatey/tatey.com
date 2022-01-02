@@ -14,9 +14,17 @@ BUNDLE_BIN: false
 
 bundle check > /dev/null 2>&1 || bundle install "$@"
 
-echo "
-export AWS_ACCESS_KEY_ID=\"ID\"
-export AWS_SECRET_ACCESS_KEY=\"SECRET\"
-export AWS_BUCKET_ID=\"s3://\"
-export AWS_DISTRIBUTION_ID=\"ID\"
-" > .envrc
+if [ -f ".envrc" ]; then
+  echo ".envrc already exists so skipping"
+else
+  echo "
+  export AWS_ACCESS_KEY_ID=\"ID\"
+  export AWS_SECRET_ACCESS_KEY=\"SECRET\"
+  export AWS_BUCKET_ID=\"s3://\"
+  export AWS_DISTRIBUTION_ID=\"ID\"
+
+  if [ -x \"$(command -v nix)\" ] && [ \"$(type -t use_nix)\" = function ]; then
+    use_nix
+  fi
+  " > .envrc
+fi
