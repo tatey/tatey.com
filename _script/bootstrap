@@ -17,4 +17,6 @@ bundle check > /dev/null 2>&1 || bundle install "$@"
 echo "
 export AWS_ACCESS_KEY_ID=\"ID\"
 export AWS_SECRET_ACCESS_KEY=\"SECRET\"
+export AWS_BUCKET_ID=\"s3://\"
+export AWS_DISTRIBUTION_ID=\"ID\"
 " > .envrc

@@ -2,4 +2,6 @@
 
 rm -rf _site
 bundle exec jekyll build
-aws s3 sync _site s3://tatey.com --delete
+aws s3 sync _site $AWS_BUCKET_ID --delete
+aws cloudfront create-invalidation --distribution-id $AWS_DISTRIBUTION_ID --paths '/*'
+echo "Deployed ✅"
