@@ -96,6 +96,6 @@
   <body>
     <h1 id="title">{{ page.title }}</h1>
     {{ content }}
-    <p id="meta">You are reading the blog of <a href="{{ "/" | relative_url }}">Tate Johnson</a>. Subscribe to my <a href="{{ "/feed.xml" | relative_url }}">RSS feed</a>.</p>
+    <p id="meta">Written by <a href="{{ "/" | relative_url }}">Tate Johnson</a> on {{ page.date | date: "%e %b %Y" }}. Subscribe to my blog's <a href="{{ "/feed.xml" | relative_url }}">RSS feed</a>.</p>
   </body>
 </html>
