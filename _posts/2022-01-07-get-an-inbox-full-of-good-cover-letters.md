@@ -46,7 +46,7 @@ All job ads I've posted since mid 2020 have signed off with questions. Originall
 - Emphasise to applicants that you, the hiring manager, who is also a human, will read their submissions.
 - Give gratitude to applicants for taking the time to apply, irrespective of your evaluation.
 
-When it comes to reviewing submissions the first thing you'll notice is the applicants who read the job ad, and the applicants who didn't. I decline the applicants who didn't. The second think you'll notice is how comprehensive the cover letters are, and the baseline you now have to compare objectively. I recommend doing a pass on cover letters first to make your initial shortlist, and then go back and do a pass on CVs to make your final shortlist. I weigh cover letters above CVs because of their relevance to the job ad.
+When it comes to reviewing submissions the first thing you'll notice is the applicants who read the job ad, and the applicants who didn't. I decline the applicants who didn't. The second thing you'll notice is how comprehensive the cover letters are, and the baseline you now have to compare objectively. I recommend doing a pass on cover letters first to make your initial shortlist, and then go back and do a pass on CVs to make your final shortlist. I weigh cover letters above CVs because of their relevance to the job ad.
 
 When it comes to interviewing applicants, the experience may feel closer to the second interview. Not quite the second interview because you've never met before, but not quite the first interview because you've already gained an insightful perspective. I recommend using some of the applicant's answers to go deeper, especially if they are surprising to you.
 
