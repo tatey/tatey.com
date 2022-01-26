@@ -5,7 +5,7 @@ layout: post
 
 Hi there, we're [The Lookout Way](https://thelookoutway.com) and we make Lookout — a care management platform that powers aged care and NDIS service providers to get exceptional outcomes for their clients, families, and support workers.
 
-[Our team](https://fivegoodfriends.notion.site/d21f01398db747b7b9009e5e4cfe14e8?v=f2c4122a863f433685933cf0e298607a) extracted Lookout from the digital infrastructure we made by running a real, world-class service provider, [Five Good Friends](https://www.fivegoodfriends.com.au). Lookout has already powered over 1,000,000 hours of support in the home and it will power another 40,000 hours of life enhancing support next month.
+[Our team](https://www.thelookoutway.com/meet-the-team) extracted Lookout from the digital infrastructure we made by running a real, world-class service provider, [Five Good Friends](https://www.fivegoodfriends.com.au). Lookout has already powered over 1,000,000 hours of support in the home and it will power another 40,000 hours of life enhancing support next month.
 
 We're aiming for a flexible start in late Jan or Feb '22 and accepting applications until Sunday, 5th December 23:59. We promise to respond within 7 days so we'd love to hear from you! 👋😊
 
