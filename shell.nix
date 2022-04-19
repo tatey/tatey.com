@@ -7,7 +7,6 @@ in
 nixpkgs.mkShell {
   buildInputs = [
     nixpkgs.awscli2
-    nixpkgs.direnv
     nixpkgs.ruby_3_0
   ];
   shellHook = ''
