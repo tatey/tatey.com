@@ -1,13 +1,13 @@
 let
   nixpkgs =
     import (builtins.fetchTarball {
-      url = https://github.com/NixOS/nixpkgs/archive/7f58f36cd5bdc99f36ddaae320c49b5a6340ce43.tar.gz;
+      url = https://github.com/NixOS/nixpkgs/archive/2362848adf8def2866fabbffc50462e929d7fffb.tar.gz;
     }) { };
 in
 nixpkgs.mkShell {
   buildInputs = [
     nixpkgs.awscli2
-    nixpkgs.ruby_3_0
+    nixpkgs.ruby_3_1
   ];
   shellHook = ''
     eval "$(direnv hook $SHELL)"
