@@ -22,4 +22,4 @@ Install awscli and configure environment variables. Then deploy:
 
 ## Copyright
 
-Copyright 2009–2024 © Tate Johnson. All rights reserved.
+Copyright 2009–2025 © Tate Johnson. All rights reserved.
