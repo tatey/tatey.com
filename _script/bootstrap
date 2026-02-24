@@ -22,9 +22,5 @@ else
   export AWS_SECRET_ACCESS_KEY=\"SECRET\"
   export AWS_BUCKET_ID=\"s3://\"
   export AWS_DISTRIBUTION_ID=\"ID\"
-
-  if [ -x \"$(command -v nix)\" ] && [ \"$(type -t use_nix)\" = function ]; then
-    use_nix
-  fi
   " > .envrc
 fi
