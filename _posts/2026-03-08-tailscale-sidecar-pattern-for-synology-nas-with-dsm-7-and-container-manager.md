@@ -3,7 +3,7 @@ layout: post
 title: Tailscale sidecar pattern for Synology NAS with DSM 7 and Container Manager
 ---
 
-[Tailscale](https://tailscale.com) lets you connect your devices over the internet as if they were on the same local network. Its MagicDNS feature gives each device a stable hostname so you can reach them with something like `foo.yourtailnet.ts.net` instead of an IP address. You get the convenience of being able to access services remotely, but they're protected by a private network.
+[Tailscale](https://tailscale.com) lets you connect your devices over the internet as if they were on the same local network. Its MagicDNS feature gives each device a stable hostname so you can reach them with something like `foo.yourtailnet.ts.net` instead of an IP address. It's convenient and private.
 
 I use [Container Manager](https://www.synology.com/en-br/dsm/feature/docker) on my Synology NAS to self-host services. Tailscale can be installed as a client directly into [DSM](https://www.synology.com/en-us/dsm), but any self-hosted service needs to be exposed on distinct ports since they share the same Tailscale interface. While there is nothing technically wrong with this, remembering `foo.yourtailnet.ts.net:61209 ` is not particularly elegant.
 
