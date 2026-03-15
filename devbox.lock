@@ -15,20 +15,6 @@
         }
       }
     },
-    "bundler": {
-      "resolved": "github:NixOS/nixpkgs/d1c15b7d5806069da59e819999d70e1cec0760bf#bundler",
-      "source": "nixpkg",
-      "systems": {
-        "aarch64-darwin": {
-          "outputs": [
-            {
-              "path": "/nix/store/0x0ckakw4ar9ib83h0bw8hcmhs5zi04w-bundler-2.7.2",
-              "default": true
-            }
-          ]
-        }
-      }
-    },
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
       "last_modified": "2026-02-16T02:09:13Z",
       "resolved": "github:NixOS/nixpkgs/d1c15b7d5806069da59e819999d70e1cec0760bf?lastModified=1771207753"
@@ -52,68 +38,68 @@
         }
       }
     },
-    "ruby_3_3@latest": {
-      "last_modified": "2024-09-10T15:01:03Z",
+    "ruby@4": {
+      "last_modified": "2026-03-02T11:03:52Z",
       "plugin_version": "0.0.2",
-      "resolved": "github:NixOS/nixpkgs/5ed627539ac84809c78b2dd6d26a5cebeb5ae269#ruby",
+      "resolved": "github:NixOS/nixpkgs/dc7513872406b53d2ff417a003895d6daffdff2f#ruby_4_0",
       "source": "devbox-search",
-      "version": "3.3.4",
+      "version": "4.0.1",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/zsngi7cq7asxc6kb0lcmbyydasfrmai6-ruby-3.3.4",
+              "path": "/nix/store/9g64hd12h7595635pxifl86a7bn0nihs-ruby-4.0.1",
               "default": true
             },
             {
               "name": "devdoc",
-              "path": "/nix/store/c0zmjmfw5pp00slwy842bd8zzy74pava-ruby-3.3.4-devdoc"
+              "path": "/nix/store/q3fn21065a4yykmd6mfixax196zy6wrk-ruby-4.0.1-devdoc"
             }
           ],
-          "store_path": "/nix/store/zsngi7cq7asxc6kb0lcmbyydasfrmai6-ruby-3.3.4"
+          "store_path": "/nix/store/9g64hd12h7595635pxifl86a7bn0nihs-ruby-4.0.1"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/8vri7d6b75gspvnfrdpqnagfi5bbvis9-ruby-3.3.4",
+              "path": "/nix/store/7k34n5f1zrxk8hdc2ssbggrpy6q143py-ruby-4.0.1",
               "default": true
             },
             {
               "name": "devdoc",
-              "path": "/nix/store/bfrwr1n6pxd3hz31h589j317g290p0r5-ruby-3.3.4-devdoc"
+              "path": "/nix/store/r7h02c82kkgwgl499g1igbh8lxy8gvqs-ruby-4.0.1-devdoc"
             }
           ],
-          "store_path": "/nix/store/8vri7d6b75gspvnfrdpqnagfi5bbvis9-ruby-3.3.4"
+          "store_path": "/nix/store/7k34n5f1zrxk8hdc2ssbggrpy6q143py-ruby-4.0.1"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/hksac0axpx3savrgmy75rid3smv0d9nj-ruby-3.3.4",
+              "path": "/nix/store/fnsfka0h6nrbghndc0i4x6zs3hmvigjq-ruby-4.0.1",
               "default": true
             },
             {
               "name": "devdoc",
-              "path": "/nix/store/3564jxjgp9dk8vzjwb7i3fpzkpw74z3m-ruby-3.3.4-devdoc"
+              "path": "/nix/store/whaaq5cr2wwdj8qshqqj10lhd9ykz046-ruby-4.0.1-devdoc"
             }
           ],
-          "store_path": "/nix/store/hksac0axpx3savrgmy75rid3smv0d9nj-ruby-3.3.4"
+          "store_path": "/nix/store/fnsfka0h6nrbghndc0i4x6zs3hmvigjq-ruby-4.0.1"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/2vg3asd3rmhng3wqvp781a1q5dhrr4yn-ruby-3.3.4",
+              "path": "/nix/store/c3srisw5dc6b210h0s99cpn0piwcnw9s-ruby-4.0.1",
               "default": true
             },
             {
               "name": "devdoc",
-              "path": "/nix/store/2vgrf69lcz8ipawxipza3w7gsqdnbbnk-ruby-3.3.4-devdoc"
+              "path": "/nix/store/j1zy0bshvqxivi7rf10p0y8bsyx9jz72-ruby-4.0.1-devdoc"
             }
           ],
-          "store_path": "/nix/store/2vg3asd3rmhng3wqvp781a1q5dhrr4yn-ruby-3.3.4"
+          "store_path": "/nix/store/c3srisw5dc6b210h0s99cpn0piwcnw9s-ruby-4.0.1"
         }
       }
     }

@@ -1,8 +1,7 @@
 {
   "packages": [
-    "bundler",
     "awscli2",
     "libffi",
-    "ruby_3_3@latest"
+    "ruby@4"
   ]
 }
